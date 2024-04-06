@@ -50,12 +50,13 @@
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.30000000000000004,
     "biomeType": "DESERT",
     "spawnBiome": true,
     "biomeWeight": 100,
     "biomeDictionaryTypes": [
-      "MUSHROOM"
+      "MUSHROOM",
+      "PLAINS"
     ],
     "grassPerChunk": 18,
     "seagrassPerChunk": 23,
@@ -65,10 +66,10 @@
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 2,
     "reedsPerChunk": 10,
-    "cactiPerChunk": 3,
+    "cactiPerChunk": 0,
     "treesPerChunk": 1,
     "vanillaTreeType": "Big trees",
-    "treeType": 0,
+    "treeType": 1,
     "minHeight": 20,
     "maxWaterDepth": 0,
     "treeStem": {
@@ -91,8 +92,8 @@
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
-    "spawnShipwreck": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
     "oceanRuinType": "WARM",
     "defaultFeatures": [
       "Caves",
@@ -103,7 +104,10 @@
       "GrassAndDeadBushes",
       "StoneVariants",
       "SedimentDisks",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "Fossils",
+      "InfestedStone",
+      "MonsterRooms"
     ],
     "spawnEntries": [
       {
