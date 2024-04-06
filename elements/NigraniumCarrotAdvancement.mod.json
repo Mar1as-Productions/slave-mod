@@ -11,12 +11,12 @@
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": false,
+    "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 2,
-    "achievementType": "goal",
+    "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:Africaenter"
     },

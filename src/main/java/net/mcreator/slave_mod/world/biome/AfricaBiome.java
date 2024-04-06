@@ -15,6 +15,7 @@ import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.FrequencyConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
+import net.minecraft.world.gen.feature.structure.ShipwreckConfig;
 import net.minecraft.world.gen.feature.structure.OceanRuinStructure;
 import net.minecraft.world.gen.feature.structure.OceanRuinConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
@@ -51,13 +52,13 @@ public class AfricaBiome extends SlaveModModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.MUSHROOM);
+		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.MUSHROOM, BiomeDictionary.Type.PLAINS);
 		BiomeManager.addSpawnBiome(biome);
 		BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(biome, 100));
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.2f).temperature(2f).precipitation(Biome.RainType.NONE)
+			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.3f).temperature(2f).precipitation(Biome.RainType.NONE)
 					.category(Biome.Category.MUSHROOM).waterColor(-13420521).waterFogColor(-13619176).parent("ocean")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 							Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
@@ -68,11 +69,14 @@ public class AfricaBiome extends SlaveModModElements.ModElement {
 			DefaultBiomeFeatures.addTaigaRocks(this);
 			DefaultBiomeFeatures.addSedimentDisks(this);
 			DefaultBiomeFeatures.addFreezeTopLayer(this);
+			DefaultBiomeFeatures.addFossils(this);
+			DefaultBiomeFeatures.addInfestedStone(this);
+			DefaultBiomeFeatures.addMonsterRooms(this);
 			this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 			this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
 			this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 			this.addStructure(Feature.VILLAGE.withConfiguration(new VillageConfig("village/plains/town_centers", 6)));
-			this.addStructure(Feature.OCEAN_MONUMENT.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+			this.addStructure(Feature.SHIPWRECK.withConfiguration(new ShipwreckConfig(false)));
 			this.addStructure(Feature.OCEAN_RUIN.withConfiguration(new OceanRuinConfig(OceanRuinStructure.Type.WARM, 0.3F, 0.9F)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(DefaultBiomeFeatures.DEFAULT_FLOWER_CONFIG)
 					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(2))));
@@ -88,8 +92,6 @@ public class AfricaBiome extends SlaveModModElements.ModElement {
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.SUGAR_CANE_CONFIG)
 					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(10))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.CACTUS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(3))));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,

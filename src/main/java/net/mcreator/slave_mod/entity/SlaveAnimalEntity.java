@@ -24,7 +24,6 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -53,7 +52,6 @@ import net.minecraft.block.BlockState;
 import net.mcreator.slave_mod.procedures.SlaveAnimalRightClickedOnEntityProcedure;
 import net.mcreator.slave_mod.procedures.SlaveAnimalEntityDiesProcedure;
 import net.mcreator.slave_mod.itemgroup.SlaveModItemGroup;
-import net.mcreator.slave_mod.item.KKKarmorItem;
 import net.mcreator.slave_mod.SlaveModModElements;
 
 import java.util.Map;
@@ -115,10 +113,6 @@ public class SlaveAnimalEntity extends SlaveModModElements.ModElement {
 			experienceValue = 1;
 			setNoAI(false);
 			enablePersistence();
-			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(KKKarmorItem.helmet));
-			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(KKKarmorItem.body));
-			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(KKKarmorItem.legs));
-			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(KKKarmorItem.boots));
 		}
 
 		@Override
@@ -239,6 +233,7 @@ public class SlaveAnimalEntity extends SlaveModModElements.ModElement {
 						this.enablePersistence();
 				}
 			}
+			sourceentity.startRiding(this);
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();

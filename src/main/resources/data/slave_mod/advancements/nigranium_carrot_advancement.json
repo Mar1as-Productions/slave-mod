@@ -9,10 +9,10 @@
     "description": {
       "translate": "advancements.nigranium_carrot_advancement.descr"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "nigranium_carrot_advancement": {

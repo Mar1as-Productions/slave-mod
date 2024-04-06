@@ -2,20 +2,26 @@
 package net.mcreator.slave_mod.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.slave_mod.procedures.NigraniumCarrotEatenProcedure;
 import net.mcreator.slave_mod.itemgroup.SlaveModItemGroup;
 import net.mcreator.slave_mod.SlaveModModElements;
 
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @SlaveModModElements.ModElement.Tag
@@ -38,8 +44,20 @@ public class NigraniumcarrotItem extends SlaveModModElements.ModElement {
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean hasEffect(ItemStack itemstack) {
+			return true;
+		}
+
+		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.EAT;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Eat it or yo mamma so fat"));
 		}
 
 		@Override
@@ -51,6 +69,7 @@ public class NigraniumcarrotItem extends SlaveModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				NigraniumCarrotEatenProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
