@@ -49,7 +49,7 @@ public class RangedSlaveEntityDiesProcedure extends SlaveModModElements.ModEleme
 				world.addEntity(entityToSpawn);
 			}
 		}
-		if ((Math.random() <= 0.3)) {
+		if ((Math.random() <= 0.7)) {
 			if (!world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(SpearItem.block));
 				entityToSpawn.setPickupDelay((int) 10);

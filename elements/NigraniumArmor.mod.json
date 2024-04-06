@@ -10,15 +10,6 @@
     "textureLeggings": "nigraniumarmor_leggings",
     "enableBoots": true,
     "textureBoots": "nigraniumarmor_boots",
-    "onHelmetTick": {
-      "name": "NigraniumArmorFireResistance"
-    },
-    "onBodyTick": {
-      "name": "NigraniumArmorFireResistance"
-    },
-    "onLeggingsTick": {
-      "name": "NigraniumArmorFireResistance"
-    },
     "onBootsTick": {
       "name": "NigraniumArmorFireResistance"
     },

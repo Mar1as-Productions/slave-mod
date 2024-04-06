@@ -28,7 +28,6 @@ import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.monster.WitherSkeletonEntity;
-import net.minecraft.entity.monster.SpiderEntity;
 import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.monster.PillagerEntity;
 import net.minecraft.entity.monster.IllusionerEntity;
@@ -152,7 +151,7 @@ public class RangedSlaveEntity extends SlaveModModElements.ModElement {
 			this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, PillagerEntity.class, false, true));
 			this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, IllusionerEntity.class, false, true));
 			this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, WitherSkeletonEntity.class, false, true));
-			this.targetSelector.addGoal(15, new NearestAttackableTargetGoal(this, SpiderEntity.class, false, true));
+			this.targetSelector.addGoal(15, new NearestAttackableTargetGoal(this, EncagedOtrokEntity.CustomEntity.class, false, true));
 			this.targetSelector.addGoal(16, new NearestAttackableTargetGoal(this, SkeletonEntity.class, false, true));
 			this.goalSelector.addGoal(17, new LeapAtTargetGoal(this, (float) 0.75));
 			this.goalSelector.addGoal(18, new OpenDoorGoal(this, true));

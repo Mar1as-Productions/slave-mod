@@ -75,54 +75,17 @@ public class NigraniumArmorItem extends SlaveModModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "slave_mod:textures/models/armor/nigraniumarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-
-			@Override
-			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
-				super.onArmorTick(itemstack, world, entity);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					NigraniumArmorFireResistanceProcedure.executeProcedure($_dependencies);
-				}
-			}
 		}.setRegistryName("nigranium_armor_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(SlaveModItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "slave_mod:textures/models/armor/nigraniumarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-
-			@Override
-			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					NigraniumArmorFireResistanceProcedure.executeProcedure($_dependencies);
-				}
-			}
 		}.setRegistryName("nigranium_armor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(SlaveModItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "slave_mod:textures/models/armor/nigraniumarmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-			}
-
-			@Override
-			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					NigraniumArmorFireResistanceProcedure.executeProcedure($_dependencies);
-				}
 			}
 		}.setRegistryName("nigranium_armor_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(SlaveModItemGroup.tab)) {

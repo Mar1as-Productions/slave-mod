@@ -89,33 +89,35 @@ public class StrachProcedure extends SlaveModModElements.ModElement {
 							}
 						}.compareDistOf(x, y, z)).collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (((((Entity) world
-							.getEntitiesWithinAABB(SlaveEntity.CustomEntity.class,
-									new AxisAlignedBB(x - (25 / 2d), y - (25 / 2d), z - (25 / 2d), x + (25 / 2d), y + (25 / 2d), z + (25 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)
-							|| ((((Entity) world.getEntitiesWithinAABB(RangedSlaveEntity.CustomEntity.class,
-									new AxisAlignedBB(x - (25 / 2d), y - (25 / 2d), z - (25 / 2d), x + (25 / 2d), y + (25 / 2d), z + (25 / 2d)), null)
-									.stream().sorted(new Object() {
-										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-											return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-										}
-									}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null) || (((Entity) world
-											.getEntitiesWithinAABB(SlaveAnimalEntity.CustomEntity.class, new AxisAlignedBB(x - (25 / 2d),
-													y - (25 / 2d), z - (25 / 2d), x + (25 / 2d), y + (25 / 2d), z + (25 / 2d)), null)
-											.stream().sorted(new Object() {
-												Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-													return Comparator
-															.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-												}
-											}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)))) {
-						if (((entityiterator instanceof SlaveEntity.CustomEntity) || ((entityiterator instanceof RangedSlaveEntity.CustomEntity)
-								|| (entityiterator instanceof SlaveAnimalEntity.CustomEntity)))) {
-							entityiterator.attackEntityFrom(DamageSource.IN_FIRE, (float) 10);
-							entityiterator.setFire((int) 15);
+					if ((!(entityiterator.isBurning()))) {
+						if (((((Entity) world.getEntitiesWithinAABB(SlaveEntity.CustomEntity.class,
+								new AxisAlignedBB(x - (25 / 2d), y - (25 / 2d), z - (25 / 2d), x + (25 / 2d), y + (25 / 2d), z + (25 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)
+								|| ((((Entity) world.getEntitiesWithinAABB(RangedSlaveEntity.CustomEntity.class,
+										new AxisAlignedBB(x - (25 / 2d), y - (25 / 2d), z - (25 / 2d), x + (25 / 2d), y + (25 / 2d), z + (25 / 2d)),
+										null).stream().sorted(new Object() {
+											Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+												return Comparator
+														.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+											}
+										}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null) || (((Entity) world
+												.getEntitiesWithinAABB(SlaveAnimalEntity.CustomEntity.class, new AxisAlignedBB(x - (25 / 2d),
+														y - (25 / 2d), z - (25 / 2d), x + (25 / 2d), y + (25 / 2d), z + (25 / 2d)), null)
+												.stream().sorted(new Object() {
+													Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+														return Comparator
+																.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+													}
+												}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)))) {
+							if (((entityiterator instanceof SlaveEntity.CustomEntity) || ((entityiterator instanceof RangedSlaveEntity.CustomEntity)
+									|| (entityiterator instanceof SlaveAnimalEntity.CustomEntity)))) {
+								entityiterator.attackEntityFrom(DamageSource.IN_FIRE, (float) 10);
+								entityiterator.setFire((int) 15);
+							}
 						}
 					}
 				}

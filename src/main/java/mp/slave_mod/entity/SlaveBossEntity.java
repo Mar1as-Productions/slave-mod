@@ -23,12 +23,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.monster.WitherSkeletonEntity;
 import net.minecraft.entity.monster.SkeletonEntity;
 import net.minecraft.entity.monster.PillagerEntity;
@@ -63,6 +64,8 @@ import net.minecraft.block.BlockState;
 
 import mp.slave_mod.procedures.SlaveBossEntityDiesProcedure;
 import mp.slave_mod.itemgroup.SlaveModItemGroup;
+import mp.slave_mod.item.NigraniumSwordItem;
+import mp.slave_mod.item.NigraniumAxeItem;
 import mp.slave_mod.SlaveModModElements;
 
 import java.util.Map;
@@ -74,7 +77,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 @SlaveModModElements.ModElement.Tag
 public class SlaveBossEntity extends SlaveModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(2).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(2).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
 			.size(0.6f, 1.8f)).build("slave_boss").setRegistryName("slave_boss");
 	public SlaveBossEntity(SlaveModModElements instance) {
 		super(instance, 21);
@@ -125,6 +128,8 @@ public class SlaveBossEntity extends SlaveModModElements.ModElement {
 			experienceValue = 10;
 			setNoAI(false);
 			enablePersistence();
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(NigraniumSwordItem.block));
+			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(NigraniumAxeItem.block));
 		}
 
 		@Override
@@ -137,19 +142,19 @@ public class SlaveBossEntity extends SlaveModModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true));
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
-			this.goalSelector.addGoal(4, new RandomSwimmingGoal(this, 3, 40));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, VillagerEntity.class, true, true));
-			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, GolemEntity.class, true, true));
-			this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, true));
-			this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, CreeperEntity.class, true, true));
-			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, EndermanEntity.class, true, true));
-			this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, ZombieEntity.class, true, true));
-			this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, PillagerEntity.class, true, true));
-			this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, IllusionerEntity.class, true, true));
-			this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, WitherSkeletonEntity.class, true, true));
-			this.targetSelector.addGoal(15, new NearestAttackableTargetGoal(this, SkeletonEntity.class, true, true));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, VillagerEntity.class, true, true));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, GolemEntity.class, true, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, true));
+			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, CreeperEntity.class, true, true));
+			this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, EndermanEntity.class, true, true));
+			this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, EncagedOtrokEntity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, PillagerEntity.class, true, true));
+			this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, IllusionerEntity.class, true, true));
+			this.targetSelector.addGoal(12, new NearestAttackableTargetGoal(this, WitherSkeletonEntity.class, true, true));
+			this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, SkeletonEntity.class, true, true));
+			this.goalSelector.addGoal(14, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(15, new RandomSwimmingGoal(this, 3, 40));
 			this.goalSelector.addGoal(16, new LeapAtTargetGoal(this, (float) 1.9));
 			this.goalSelector.addGoal(17, new OpenDoorGoal(this, true));
 			this.goalSelector.addGoal(18, new OpenDoorGoal(this, false));
@@ -197,6 +202,14 @@ public class SlaveBossEntity extends SlaveModModElements.ModElement {
 			if (source == DamageSource.CACTUS)
 				return false;
 			if (source == DamageSource.DROWN)
+				return false;
+			if (source == DamageSource.LIGHTNING_BOLT)
+				return false;
+			if (source == DamageSource.DRAGON_BREATH)
+				return false;
+			if (source == DamageSource.WITHER)
+				return false;
+			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
 		}

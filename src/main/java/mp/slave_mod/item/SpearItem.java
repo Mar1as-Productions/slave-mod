@@ -21,9 +21,12 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
@@ -39,9 +42,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 
 import mp.slave_mod.procedures.SpearRangedItemUsedProcedure;
-import mp.slave_mod.procedures.SpearBulletHitsPlayerProcedure;
-import mp.slave_mod.procedures.SpearBulletHitsLivingEntityProcedure;
-import mp.slave_mod.procedures.SpearBulletHitsBlockProcedure;
+import mp.slave_mod.procedures.SpearBulletHitsAnythingProcedure;
 import mp.slave_mod.itemgroup.SlaveModItemGroup;
 import mp.slave_mod.SlaveModModElements;
 
@@ -51,6 +52,8 @@ import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import com.google.common.collect.Multimap;
 
 @SlaveModModElements.ModElement.Tag
 public class SpearItem extends SlaveModModElements.ModElement {
@@ -97,6 +100,18 @@ public class SpearItem extends SlaveModModElements.ModElement {
 		}
 
 		@Override
+		public Multimap<String, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot) {
+			Multimap<String, AttributeModifier> multimap = super.getAttributeModifiers(slot);
+			if (slot == EquipmentSlotType.MAINHAND) {
+				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
+						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "ranged_item_damage", (double) 4, AttributeModifier.Operation.ADDITION));
+				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
+						new AttributeModifier(ATTACK_SPEED_MODIFIER, "ranged_item_attack_speed", -2.4, AttributeModifier.Operation.ADDITION));
+			}
+			return multimap;
+		}
+
+		@Override
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
@@ -104,16 +119,12 @@ public class SpearItem extends SlaveModModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.2f, 2.5, 0);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.2f, 2.5, 3);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 					{
 						Map<String, Object> $_dependencies = new HashMap<>();
 						$_dependencies.put("entity", entity);
-						$_dependencies.put("x", x);
-						$_dependencies.put("y", y);
-						$_dependencies.put("z", z);
-						$_dependencies.put("world", world);
 						SpearRangedItemUsedProcedure.executeProcedure($_dependencies);
 					}
 				}
@@ -166,12 +177,12 @@ public class SpearItem extends SlaveModModElements.ModElement {
 			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				SpearBulletHitsPlayerProcedure.executeProcedure($_dependencies);
+				SpearBulletHitsAnythingProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -187,12 +198,12 @@ public class SpearItem extends SlaveModModElements.ModElement {
 			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				SpearBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
+				SpearBulletHitsAnythingProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -213,7 +224,7 @@ public class SpearItem extends SlaveModModElements.ModElement {
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					SpearBulletHitsBlockProcedure.executeProcedure($_dependencies);
+					SpearBulletHitsAnythingProcedure.executeProcedure($_dependencies);
 				}
 				this.remove();
 			}
@@ -364,7 +375,7 @@ public class SpearItem extends SlaveModModElements.ModElement {
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.2f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(2.5);
-		entityarrow.setKnockbackStrength(0);
+		entityarrow.setKnockbackStrength(3);
 		entityarrow.setIsCritical(true);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();

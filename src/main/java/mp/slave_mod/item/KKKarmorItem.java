@@ -228,6 +228,7 @@ public class KKKarmorItem extends SlaveModModElements.ModElement {
 		public Modelarmor_main2() {
 			textureWidth = 128;
 			textureHeight = 64;
+			
 			Hood = new ModelRenderer(this);
 			Hood.setRotationPoint(0.0F, 0.0F, 0.0F);
 			Hood.setTextureOffset(19, 6).addBox(4.0F, -9.0F, -5.0F, 1.0F, 10.0F, 10.0F, 0.0F, false);
@@ -244,6 +245,7 @@ public class KKKarmorItem extends SlaveModModElements.ModElement {
 			Hood.setTextureOffset(22, 1).addBox(-2.0F, -19.0F, -2.0F, 4.0F, 10.0F, 4.0F, 0.0F, false);
 			Hood.setTextureOffset(22, 4).addBox(-1.0F, -22.0F, -1.0F, 2.0F, 13.0F, 2.0F, 0.0F, false);
 			Hood.setTextureOffset(22, 1).addBox(0.0F, -23.0F, -1.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
+			
 			Robe = new ModelRenderer(this);
 			Robe.setRotationPoint(0.0F, 0.0F, 0.0F);
 			Robe.setTextureOffset(65, 43).addBox(3.5F, 1.0F, -3.0F, 1.0F, 12.0F, 6.0F, 0.0F, false);
@@ -251,6 +253,7 @@ public class KKKarmorItem extends SlaveModModElements.ModElement {
 			Robe.setTextureOffset(39, 47).addBox(-4.0F, 0.0F, -3.0F, 8.0F, 13.0F, 1.0F, 0.0F, false);
 			Robe.setTextureOffset(51, 49).addBox(-4.0F, 0.0F, 2.0F, 8.0F, 13.0F, 1.0F, 0.0F, false);
 			Robe.setTextureOffset(45, 35).addBox(-3.0F, 0.0F, -2.0F, 6.0F, 1.0F, 4.0F, 0.0F, false);
+			
 			RightSleeve = new ModelRenderer(this);
 			RightSleeve.setRotationPoint(-6.0F, 8.0F, 0.0F);
 			setRotationAngle(RightSleeve, 0.0F, 0.0F, 0.0F);
@@ -260,6 +263,7 @@ public class KKKarmorItem extends SlaveModModElements.ModElement {
 			RightSleeve.setTextureOffset(80, 41).addBox(1.0F, -4.0F, -2.0F, 1.0F, 17.0F, 4.0F, 0.0F, false);
 			RightSleeve.setTextureOffset(88, 32).addBox(-3.0F, -4.0F, -2.0F, 4.0F, 3.0F, 4.0F, 0.0F, false);
 			RightSleeve.setTextureOffset(88, 32).addBox(-3.0F, 10.0F, -2.0F, 4.0F, 3.0F, 4.0F, 0.0F, false);
+			
 			LeftSleeve = new ModelRenderer(this);
 			LeftSleeve.setRotationPoint(6.0F, 8.0F, 0.0F);
 			setRotationAngle(LeftSleeve, 0.0F, 0.0F, 0.0F);
@@ -269,6 +273,7 @@ public class KKKarmorItem extends SlaveModModElements.ModElement {
 			LeftSleeve.setTextureOffset(101, 41).addBox(-2.0F, -4.0F, -2.0F, 1.0F, 17.0F, 4.0F, 0.0F, false);
 			LeftSleeve.setTextureOffset(88, 33).addBox(-1.0F, -4.0F, -2.0F, 4.0F, 3.0F, 4.0F, 0.0F, false);
 			LeftSleeve.setTextureOffset(88, 33).addBox(-1.0F, 9.0F, -2.0F, 4.0F, 4.0F, 4.0F, 0.0F, false);
+			
 			RightShoe = new ModelRenderer(this);
 			RightShoe.setRotationPoint(-1.9F, 12.0F, 0.0F);
 			RightShoe.setTextureOffset(4, 48).addBox(-3.0F, 9.0F, -3.0F, 1.0F, 3.0F, 6.0F, 0.0F, false);
@@ -276,6 +281,7 @@ public class KKKarmorItem extends SlaveModModElements.ModElement {
 			RightShoe.setTextureOffset(4, 53).addBox(-3.0F, 9.0F, 3.0F, 6.0F, 3.0F, 1.0F, 0.0F, false);
 			RightShoe.setTextureOffset(4, 53).addBox(-3.0F, 9.0F, -4.0F, 6.0F, 3.0F, 1.0F, 0.0F, false);
 			RightShoe.setTextureOffset(2, 43).addBox(-2.0F, 9.0F, -3.0F, 5.0F, 1.0F, 6.0F, 0.0F, false);
+			
 			LeftShoe = new ModelRenderer(this);
 			LeftShoe.setRotationPoint(1.9F, 12.0F, 0.0F);
 			LeftShoe.setTextureOffset(4, 53).addBox(-3.0F, 9.0F, -4.0F, 6.0F, 3.0F, 1.0F, 0.0F, false);
