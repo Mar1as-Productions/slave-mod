@@ -69,7 +69,7 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 1,
     "vanillaTreeType": "Big trees",
-    "treeType": 1,
+    "treeType": 0,
     "minHeight": 20,
     "maxWaterDepth": 0,
     "treeStem": {
