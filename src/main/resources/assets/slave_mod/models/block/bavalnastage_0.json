@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slave_mod:blocks/stage_0",
+    "particle": "slave_mod:blocks/stage_0"
+  }
+}

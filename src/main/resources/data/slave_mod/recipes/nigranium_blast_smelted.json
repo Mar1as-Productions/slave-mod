@@ -1,0 +1,12 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "slave_mod:nigranium"
+  },
+  "result": {
+    "item": "slave_mod:nigraniumingot"
+  }
+}

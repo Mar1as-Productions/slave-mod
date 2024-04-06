@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Ebola",
+    "icon": "ebolensie.png",
+    "color": {
+      "value": -9627367,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "EbolaPotionStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "EbolaPotionStartedapplied"
+    }
+  }
+}

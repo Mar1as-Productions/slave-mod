@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "nigraniumshovel",
+    "customModelName": "Normal",
+    "name": "Nigranium Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 3,
+    "efficiency": 6.5,
+    "attackSpeed": 2.0,
+    "enchantability": 30,
+    "damageVsEntity": 4.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:NigraniumShovel"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

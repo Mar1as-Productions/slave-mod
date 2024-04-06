@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slave_mod:block/wheel"
+    },
+    "facing=east": {
+      "model": "slave_mod:block/wheel",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slave_mod:block/wheel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slave_mod:block/wheel",
+      "y": 270
+    }
+  }
+}

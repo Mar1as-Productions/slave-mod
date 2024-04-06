@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slave_mod:blocks/taposledni",
+    "particle": "slave_mod:blocks/taposledni"
+  }
+}

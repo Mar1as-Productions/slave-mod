@@ -1,0 +1,49 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "speaar",
+    "customModelName": "spear2:default",
+    "name": "Spear",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 2,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 1.0,
+    "onRangedItemUsed": {
+      "name": "SpearRangedItemUsed"
+    },
+    "bulletPower": 1.2,
+    "bulletDamage": 2.5,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelspear2",
+    "customBulletModelTexture": "spear.png",
+    "onBulletHitsBlock": {
+      "name": "SpearBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "SpearBulletHitsPlayer"
+    },
+    "onBulletHitsEntity": {
+      "name": "SpearBulletHitsLivingEntity"
+    }
+  }
+}

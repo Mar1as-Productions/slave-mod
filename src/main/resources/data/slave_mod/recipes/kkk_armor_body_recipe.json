@@ -1,0 +1,39 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slave_mod:cotton"
+    },
+    "2": {
+      "item": "slave_mod:cotton"
+    },
+    "3": {
+      "item": "slave_mod:cotton"
+    },
+    "4": {
+      "item": "minecraft:red_dye"
+    },
+    "5": {
+      "item": "slave_mod:cotton"
+    },
+    "6": {
+      "item": "slave_mod:cotton"
+    },
+    "7": {
+      "item": "slave_mod:cotton"
+    },
+    "8": {
+      "item": "slave_mod:cotton"
+    }
+  },
+  "result": {
+    "item": "slave_mod:kkk_armor_chestplate",
+    "count": 1
+  }
+}

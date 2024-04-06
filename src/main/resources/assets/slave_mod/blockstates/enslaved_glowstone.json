@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "slave_mod:block/enslaved_glowstone"
+    }
+  }
+}

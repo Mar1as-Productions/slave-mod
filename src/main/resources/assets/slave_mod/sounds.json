@@ -1,0 +1,101 @@
+{
+  "krajina": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "slave_mod:polish_cow",
+        "stream": true
+      }
+    ]
+  },
+  "jozefhurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:jozef2",
+        "stream": false
+      }
+    ]
+  },
+  "jozefdead": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:jozef3",
+        "stream": false
+      }
+    ]
+  },
+  "jozefh": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:jozef4",
+        "stream": false
+      }
+    ]
+  },
+  "jozefliving": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:jozef1",
+        "stream": false
+      }
+    ]
+  },
+  "whip": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:cardup7_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "slavehurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:slavehurt",
+        "stream": false
+      }
+    ]
+  },
+  "slavezvuk": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:slavezvuk",
+        "stream": false
+      }
+    ]
+  },
+  "slavedead": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:slavedead",
+        "stream": false
+      }
+    ]
+  },
+  "nazdarfrumrde": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:zaznam_14",
+        "stream": false
+      }
+    ]
+  },
+  "retez": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "slave_mod:pulling-a-chain-dragging-chain-www.fesliyanstudios.com",
+        "stream": false
+      }
+    ]
+  }
+}

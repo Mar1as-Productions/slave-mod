@@ -1,0 +1,33 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "slave_mod:bavlna"
+    },
+    "3": {
+      "item": "slave_mod:bavlna"
+    },
+    "5": {
+      "item": "slave_mod:bavlna"
+    },
+    "6": {
+      "item": "slave_mod:bavlna"
+    },
+    "7": {
+      "item": "slave_mod:bavlna"
+    },
+    "8": {
+      "item": "slave_mod:bavlna"
+    }
+  },
+  "result": {
+    "item": "slave_mod:kk_karmor_helmet",
+    "count": 1
+  }
+}

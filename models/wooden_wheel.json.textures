@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "kolodrevo",
+        "1": "texturepripevneni",
+        "2": "texture_ram",
+        "3": "texture_stred"
+      },
+      "name": "default"
+    }
+  }
+}

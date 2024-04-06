@@ -1,0 +1,27 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "2 ",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "1": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "2": {
+      "item": "slave_mod:chainpiece"
+    },
+    "4": {
+      "item": "slave_mod:chainpiece"
+    }
+  },
+  "result": {
+    "item": "slave_mod:nigranium_hoe",
+    "count": 1
+  }
+}

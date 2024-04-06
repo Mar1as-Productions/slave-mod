@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "nigraniumaxe",
+    "customModelName": "Normal",
+    "name": "Nigranium Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 3,
+    "efficiency": 6.5,
+    "attackSpeed": 1.85,
+    "enchantability": 30,
+    "damageVsEntity": 6.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:NigraniumAxe"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

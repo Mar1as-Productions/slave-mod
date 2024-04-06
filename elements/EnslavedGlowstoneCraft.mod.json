@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:Chainpiece"
+      },
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:Chainpiece"
+      },
+      {
+        "value": "Blocks.GLOWSTONE"
+      },
+      {
+        "value": "CUSTOM:Chainpiece"
+      },
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:Chainpiece"
+      },
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnslavedGlowstone"
+    },
+    "name": "enslaved_glowstone_craft",
+    "namespace": "mod"
+  }
+}

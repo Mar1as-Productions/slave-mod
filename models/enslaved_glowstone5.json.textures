@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "glowstone",
+        "1": "mriz"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "slave_mod:bavlna"
+    },
+    "1": {
+      "item": "slave_mod:bavlna"
+    },
+    "2": {
+      "item": "slave_mod:bavlna"
+    },
+    "3": {
+      "item": "slave_mod:bavlna"
+    },
+    "4": {
+      "item": "slave_mod:bavlna"
+    },
+    "5": {
+      "item": "slave_mod:bavlna"
+    }
+  },
+  "result": {
+    "item": "slave_mod:kk_karmor_boots",
+    "count": 1
+  }
+}

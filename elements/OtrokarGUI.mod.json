@@ -1,0 +1,266 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 170,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "pozadi_gui.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "BackgroundShowCondition"
+          },
+          "name": "pozadi_gui.png",
+          "x": 134,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Buy",
+          "onClick": {
+            "name": "Kupovaninoplsu"
+          },
+          "displayCondition": {
+            "name": "PictureShowConditionDone"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Buy",
+          "x": 149,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vystrizek.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PictureShowCondition"
+          },
+          "name": "vystrizek.png",
+          "x": 207,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vystrizek.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PictureShowCondition"
+          },
+          "name": "vystrizek.png",
+          "x": 247,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vystrizek.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PistureShowCondition2"
+          },
+          "name": "vystrizek.png",
+          "x": 227,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vystrizek.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PictureShowCondition3"
+          },
+          "name": "vystrizek.png",
+          "x": 227,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "16",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "PictureShowConditionDone"
+          },
+          "name": "16",
+          "x": 151,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "emerald_je3_be3.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PictureShowConditionDone"
+          },
+          "name": "emerald_je3_be3.png",
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "=",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "PictureShowConditionDone"
+          },
+          "name": "=",
+          "x": 167,
+          "y": 50
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "littlenslave.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PictureShowConditionDone"
+          },
+          "name": "littlenslave.png",
+          "x": 178,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "godlen_frame.png",
+          "use1Xscale": true,
+          "name": "godlen_frame.png",
+          "x": 96,
+          "y": 18
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.EMERALD"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 161,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Buy",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "PictureShowConditionDone"
+          },
+          "name": "Buy",
+          "x": 162,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Sorry but I am not able to",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BackgroundShowCondition"
+          },
+          "name": "Sorry but I am not able to",
+          "x": 147,
+          "y": 52
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "offer you more.",
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BackgroundShowCondition"
+          },
+          "name": "offer you more.",
+          "x": 179,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "No refunds",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BackgroundShowCondition"
+          },
+          "name": "No refunds",
+          "x": 189,
+          "y": 82
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Slavery a.s.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BackgroundShowCondition"
+          },
+          "name": "Slavery a.s.",
+          "x": 229,
+          "y": 105
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

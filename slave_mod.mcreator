@@ -1,0 +1,2576 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Africa",
+      "type": "biome",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africa",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "Slave",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave",
+      "path": "~/Creatures"
+    },
+    {
+      "name": "Krajina",
+      "type": "musicdisc",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "krajina",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "Africaenter",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africaenter",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "Hut",
+      "type": "structure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hut",
+      "path": "~/Structures"
+    },
+    {
+      "name": "PolishCowPainting",
+      "type": "painting",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polish_cow_painting",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "SpearBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "SpearRangedItemUsed",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "Spear",
+      "type": "rangeditem",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear",
+      "path": "~/Tools"
+    },
+    {
+      "name": "SlaveEntityDies",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures"
+    },
+    {
+      "name": "RangedSlave",
+      "type": "livingentity",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ranged_slave",
+      "path": "~/Creatures/RangedSlave"
+    },
+    {
+      "name": "RangedSlaveEntityDies",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ranged_slave_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/RangedSlave"
+    },
+    {
+      "name": "SlaveBoss",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_boss",
+      "path": "~/Creatures"
+    },
+    {
+      "name": "SlaveBossEntityDies",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_boss_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures"
+    },
+    {
+      "name": "SlaveAnimal",
+      "type": "livingentity",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_animal",
+      "path": "~/Creatures"
+    },
+    {
+      "name": "SlaveAnimalEntityDies",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_animal_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures"
+    },
+    {
+      "name": "SlaveMod",
+      "type": "tab",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_mod",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "NehoriciDrevoOak",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nehorici_drevo_oak",
+      "path": "~/Totem"
+    },
+    {
+      "name": "HutTAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hut_t_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "KKKactivatingBlockRightClick",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kk_kactivating_block_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Totem"
+    },
+    {
+      "name": "KKKactivatingBLock",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kk_kactivating_b_lock",
+      "path": "~/Totem"
+    },
+    {
+      "name": "KKKtotem",
+      "type": "structure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kk_ktotem",
+      "path": "~/Totem"
+    },
+    {
+      "name": "Rock1",
+      "type": "structure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_1",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock2",
+      "type": "structure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_2",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock3",
+      "type": "structure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_3",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock4",
+      "type": "structure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_4",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Zasazení",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zasazeni",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cotton/Procedures_Cotton"
+    },
+    {
+      "name": "Cottonseeds",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonseeds",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "ShoesRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shoes_recipe",
+      "path": "~/ARMOR/KKK_armor"
+    },
+    {
+      "name": "BavlnaRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bavlna_recipe",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Bavlna",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bavlna",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "KKKarmor",
+      "type": "armor",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "kk_karmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/ARMOR/KKK_armor"
+    },
+    {
+      "name": "RobeRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "robe_recipe",
+      "path": "~/ARMOR/KKK_armor"
+    },
+    {
+      "name": "PantsRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pants_recipe",
+      "path": "~/ARMOR/KKK_armor"
+    },
+    {
+      "name": "HoodRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hood_recipe",
+      "path": "~/ARMOR/KKK_armor"
+    },
+    {
+      "name": "Cottonstage0",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_0",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "HarvestedCotton",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "harvested_cotton",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage1",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_1",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage2",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_2",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage7",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_7",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage5",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_5",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage6",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_6",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage3",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_3",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Cottonstage4",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cottonstage_4",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "CottonBlockNeighourBlock",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cotton_block_neighour_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cotton/Procedures_Cotton"
+    },
+    {
+      "name": "CottonBlockBreak",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cotton_block_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cotton/Procedures_Cotton"
+    },
+    {
+      "name": "CottonBlockRightClick",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cotton_block_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cotton/Procedures_Cotton"
+    },
+    {
+      "name": "Growingcotton",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "growingcotton",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cotton/Procedures_Cotton"
+    },
+    {
+      "name": "Rock5",
+      "type": "structure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_5",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock6",
+      "type": "structure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_6",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock7",
+      "type": "structure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_7",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock8",
+      "type": "structure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_8",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Rock9",
+      "type": "structure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rock_9",
+      "path": "~/Structures"
+    },
+    {
+      "name": "Strach",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strach",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ARMOR/KKK_armor"
+    },
+    {
+      "name": "KKKactivatingBLockUpdateTick",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kk_kactivating_b_lock_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Totem"
+    },
+    {
+      "name": "Wodencrossbaseblock",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wodencrossbaseblock",
+      "path": "~/Totem"
+    },
+    {
+      "name": "Otrok",
+      "type": "livingentity",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "otrok",
+      "path": "~/Creatures/Otrok"
+    },
+    {
+      "name": "OtrokINV",
+      "type": "gui",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "otrok_inv",
+      "path": "~/Creatures/Otrok"
+    },
+    {
+      "name": "Nigraniumnugget",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigraniumnugget",
+      "path": "~/Items"
+    },
+    {
+      "name": "Nigranium",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Nigraniumingot",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigraniumingot",
+      "path": "~/Items"
+    },
+    {
+      "name": "Seminka",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seminka",
+      "path": "~/Cotton"
+    },
+    {
+      "name": "Nigraniumsmelted",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigraniumsmelted",
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "Ingottonugget",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingottonugget",
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "Nuggettoingot",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nuggettoingot",
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "Sbìr2",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sber_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Otrok"
+    },
+    {
+      "name": "Chainpiece",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chainpiece",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Chainforenslaving",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chainforenslaving",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "Chain",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chain",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Chainfromchainpiece",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chainfromchainpiece",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "SlaveAnimalRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slave_animal_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures"
+    },
+    {
+      "name": "KKKtotemAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kk_ktotem_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Totem"
+    },
+    {
+      "name": "NigraniumAxe",
+      "type": "tool",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_axe",
+      "path": "~/Tools"
+    },
+    {
+      "name": "NigraniumHoe",
+      "type": "tool",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_hoe",
+      "path": "~/Tools"
+    },
+    {
+      "name": "NigraniumSword",
+      "type": "tool",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_sword",
+      "path": "~/Tools"
+    },
+    {
+      "name": "NigraniumAxeCraft",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_axe_craft",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "NigraniumHoeCraft",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_hoe_craft",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "NigraniumShovelCraft",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_shovel_craft",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "NigraniumPickaxe",
+      "type": "tool",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_pickaxe",
+      "path": "~/Tools"
+    },
+    {
+      "name": "NigraniumShovel",
+      "type": "tool",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_shovel",
+      "path": "~/Tools"
+    },
+    {
+      "name": "NigraniumSwordCraft",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_sword_craft",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "NigraniumPickaxeCraft",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_pickaxe_craft",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "NigraniumShears",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_shears",
+      "path": "~/Tools"
+    },
+    {
+      "name": "NigraniumShearsCraft",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_shears_craft",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "Jozef",
+      "type": "livingentity",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jozef",
+      "path": "~/Creatures"
+    },
+    {
+      "name": "NigraniumBlockDestroyed",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Procedures"
+    },
+    {
+      "name": "NigraniumArmor",
+      "type": "armor",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/ARMOR/Nigranium_armor"
+    },
+    {
+      "name": "NigraniumHelmetCraft",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_helmet_craft",
+      "path": "~/ARMOR/Nigranium_armor"
+    },
+    {
+      "name": "NigraniumChestplateCraft",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_chestplate_craft",
+      "path": "~/ARMOR/Nigranium_armor"
+    },
+    {
+      "name": "NigraniumLeggingsCraft",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_leggings_craft",
+      "path": "~/ARMOR/Nigranium_armor"
+    },
+    {
+      "name": "NigraniumBootsCraft",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_boots_craft",
+      "path": "~/ARMOR/Nigranium_armor"
+    },
+    {
+      "name": "NigraniumBlastSmelted",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_blast_smelted",
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "SpearBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "SpearBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "WhipTool",
+      "type": "tool",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whip_tool",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Whiprecipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whiprecipe",
+      "path": "~/Tools/Recipes"
+    },
+    {
+      "name": "Harvestingagain",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "harvestingagain",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Otrok"
+    },
+    {
+      "name": "EnslavedGlowstone",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enslaved_glowstone",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "EnslavedGlowstoneCraft",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enslaved_glowstone_craft",
+      "path": "~/Blocks/Recipes"
+    },
+    {
+      "name": "Nigraniumcarrot",
+      "type": "food",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigraniumcarrot",
+      "path": "~/Items"
+    },
+    {
+      "name": "NigraniumCarrotRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_carrot_recipe",
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "WhipEndingRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whip_ending_recipe",
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "WhipEndingItem",
+      "type": "item",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whip_ending_item",
+      "path": "~/Items"
+    },
+    {
+      "name": "CarrotLeftover",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "carrot_leftover",
+      "path": "~/Items"
+    },
+    {
+      "name": "NigraniumCarrotEaten",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_carrot_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "WhipToolRightClick",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whip_tool_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "EbolaPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ebola_potion_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "NigraniumShearsBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_shears_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "EbolaPotionItem",
+      "type": "potion",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ebola",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "Amulet",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amulet",
+      "path": "~/Items/Amulet"
+    },
+    {
+      "name": "EmptyAmulet",
+      "type": "item",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_amulet",
+      "path": "~/Items/Amulet"
+    },
+    {
+      "name": "OtrokEntityDies",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "otrok_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Otrok"
+    },
+    {
+      "name": "Amuletrightclick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amuletrightclick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Amulet"
+    },
+    {
+      "name": "EmptyAmuletRightClick",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_amulet_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Amulet"
+    },
+    {
+      "name": "NigraniumCarrotAdvancement",
+      "type": "achievement",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_carrot_advancement",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "NigraniumArmorFireResistance",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_armor_fire_resistance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ARMOR/Nigranium_armor"
+    },
+    {
+      "name": "NigraniumGolem",
+      "type": "livingentity",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_golem",
+      "path": "~/Creatures/Nigranium_golem"
+    },
+    {
+      "name": "NigraniumGolemSpawn",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_golem_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Nigranium_golem"
+    },
+    {
+      "name": "NigraniumGolemDrop",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_golem_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Nigranium_golem"
+    },
+    {
+      "name": "NigraniumBlock",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_block",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NigraniumBlockCrafting",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nigranium_block_crafting",
+      "path": "~/Blocks/Recipes"
+    },
+    {
+      "name": "Kupovaninoplsu",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kupovaninoplsu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "OtrokarGUI",
+      "type": "gui",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "otrokar_gui",
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "Enslaver",
+      "type": "livingentity",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enslaver",
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "IronbarforNopleses",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironbarfor_nopleses",
+      "path": "~/Welsfargo"
+    },
+    {
+      "name": "Undestructablespruceplank",
+      "type": "block",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undestructablespruceplank",
+      "path": "~/Welsfargo"
+    },
+    {
+      "name": "Undestructableslab",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undestructableslab",
+      "path": "~/Welsfargo"
+    },
+    {
+      "name": "Wheel",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wheel",
+      "path": "~/Welsfargo"
+    },
+    {
+      "name": "EncagedOtrok",
+      "type": "livingentity",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "encaged_otrok",
+      "path": "~/Welsfargo"
+    },
+    {
+      "name": "EncagedOtrok2",
+      "type": "livingentity",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "encaged_otrok_2",
+      "path": "~/Welsfargo"
+    },
+    {
+      "name": "Bonemealcotton",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonemealcotton",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cotton/Procedures_Cotton"
+    },
+    {
+      "name": "Ebola",
+      "type": "potioneffect",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ebola",
+      "path": "~/Random_stuff"
+    },
+    {
+      "name": "PictureShowCondition",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "picture_show_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "PistureShowCondition2",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pisture_show_condition_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "PictureShowCondition3",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "picture_show_condition_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "PictureShowConditionDone",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "picture_show_condition_done",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "BackgroundShowCondition",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "background_show_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "EnslaverOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enslaver_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Enslaver"
+    },
+    {
+      "name": "Invclose",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invclose",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Creatures/Otrok"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "krajina",
+      "files": [
+        "polish_cow"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "jozefhurt",
+      "files": [
+        "jozef2"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "jozefdead",
+      "files": [
+        "jozef3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "jozefh",
+      "files": [
+        "jozef4"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "jozefliving",
+      "files": [
+        "jozef1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "whip",
+      "files": [
+        "cardup7_online-audio-converter.com"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "slavehurt",
+      "files": [
+        "slavehurt"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "slavezvuk",
+      "files": [
+        "slavezvuk"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "slavedead",
+      "files": [
+        "slavedead"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "nazdarfrumrde",
+      "files": [
+        "zaznam_14"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "retez",
+      "files": [
+        "pulling-a-chain-dragging-chain-www.fesliyanstudios.com"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.slave_mod.nigranium_hoe": "Nigranium Hoe",
+      "advancements.africaenter.title": "Entered Africa",
+      "subtitles.retez": "",
+      "item.minecraft.tipped_arrow.effect.ebola": "Arrow of Ebola",
+      "advancements.nigranium_carrot_advancement.title": "Yummy!...maybe...",
+      "item.slave_mod.nigraniumnugget": "Nigranium Nugget",
+      "block.slave_mod.nigranium_block": "Nigranium Block",
+      "biome.slave_mod.africa": "Africa",
+      "item.slave_mod.bavlnaitem": "Harvested cotton",
+      "item.slave_mod.encaged_otrok_spawn_egg": "Encaged Otrok Spawn Egg",
+      "item.slave_mod.enslaver_spawn_egg": "Enslaver Spawn Egg",
+      "subtitles.nazdarfrumrde": "",
+      "item.slave_mod.spear": "Spear",
+      "item.minecraft.potion.effect.ebola": "Ebola",
+      "entity.slave_mod.slave_boss": "Noples Ruler",
+      "itemGroup.tabslave_mod": "Slave Mod",
+      "subtitles.jozefdead": "",
+      "item.slave_mod.kk_karmor_chestplate": "KKK Robe",
+      "item.slave_mod.ranged_slave_spawn_egg": "Ranged Noples Spawn Egg",
+      "item.slave_mod.chain": "Chain",
+      "entity.slave_mod.enslaver": "Enslaver",
+      "block.slave_mod.kk_kactivating_b_lock": "KKK Totem Activating Block",
+      "block.slave_mod.cottonstage_3": "Cotton stage 3",
+      "entity.slave_mod.slave_animal": "Wild Noples",
+      "block.slave_mod.cottonstage_4": "Cotton stage 4",
+      "block.slave_mod.cottonstage_1": "Cotton stage 1",
+      "block.slave_mod.cottonstage_2": "Cotton stage 2",
+      "block.slave_mod.cottonstage_7": "Cotton stage 7",
+      "block.slave_mod.wodencrossbaseblock": "KKK Totem Base Block",
+      "block.slave_mod.cottonstage_5": "Cotton stage 5",
+      "block.slave_mod.cottonstage_6": "Cotton stage 6",
+      "item.slave_mod.slave_animal_spawn_egg": "Wild Noples Spawn Egg",
+      "item.slave_mod.whip_tool": "Whip",
+      "entity.slave_mod.slave": "Noples",
+      "block.slave_mod.cottonstage_0": "Cotton stage 0",
+      "item.slave_mod.jozef_spawn_egg": "Yozef Spawn Egg",
+      "item.slave_mod.nigranium_pickaxe": "Nigranium Pickaxe",
+      "block.slave_mod.undestructableslab": "Undestructableslab",
+      "entity.slave_mod.jozef": "Yozef",
+      "subtitles.slavezvuk": "",
+      "entity.slave_mod.encaged_otrok_2": "Encaged Otrok 2",
+      "item.slave_mod.amulet": "Nigranium Amulet",
+      "item.slave_mod.carrot_leftover": "Carrot Leftover",
+      "Slave": "Slave",
+      "item.slave_mod.nigranium_armor_leggings": "Nigranium Leggings",
+      "item.slave_mod.bavlna": "Cotton",
+      "block.slave_mod.undestructablespruceplank": "Undestructablespruceplank",
+      "item.slave_mod.cottonseeds": "Cotton seeds",
+      "item.slave_mod.nigranium_golem_spawn_egg": "Nigranium Golem Spawn Egg",
+      "entity.slave_mod.encaged_otrok": "Encaged Otrok",
+      "subtitles.jozefhurt": "",
+      "item.slave_mod.nigraniumcarrot": "Nigranium carrot",
+      "item.slave_mod.nigranium_shovel": "Nigranium Shovel",
+      "item.slave_mod.whip_ending_item": "Whip ending ",
+      "item.slave_mod.nigranium_armor_helmet": "Nigranium Helmet",
+      "item.slave_mod.kk_karmor_helmet": "KKK Hood",
+      "entity.slave_mod.otrok": "Enslaved Noples",
+      "block.slave_mod.nehorici_drevo_oak": "KKK Wood",
+      "item.slave_mod.nigranium_armor_chestplate": "Nigranium Chestplate",
+      "item.slave_mod.nigranium_shears": "Nigranium Shears",
+      "item.slave_mod.otrok_spawn_egg": "Enslaved Noples Spawn Egg",
+      "subtitles.jozefhhh": "",
+      "advancements.africaenter.descr": "You did it, you son of a bitch, you did it!",
+      "entity.slave_mod.nigranium_golem": "Nigranium Golem",
+      "block.slave_mod.nigranium": "Nigranium Ore",
+      "subtitles.slavehurt": "",
+      "subtitles.jozefh": "",
+      "item.slave_mod.nigranium_armor_boots": "Nigranium Boots",
+      "block.slave_mod.ironbarfor_nopleses": "Unoptainable iron bar",
+      "item.slave_mod.kk_karmor_boots": "KKK Shoes",
+      "block.slave_mod.enslaved_glowstone": "Enslaved Glowstone",
+      "item.slave_mod.nigranium_sword": "Nigranium Sword",
+      "block.slave_mod.wheel": "Wheel",
+      "subtitles.krajina": "",
+      "effect.ebola": "Ebola",
+      "item.slave_mod.harvested_cotton": "Harvested Cotton",
+      "item.slave_mod.krajina": "V krajine zapomnienia",
+      "subtitles.slavedead": "",
+      "item.minecraft.splash_potion.effect.ebola": "Splash Ebola",
+      "item.slave_mod.krajina.desc": "The best music disc in Minecraft.",
+      "item.slave_mod.slave_spawn_egg": "Noples Spawn Egg",
+      "subtitles.jozef1": "",
+      "entity.slave_mod.ranged_slave": "Ranged Noples",
+      "subtitles.jozef2": "",
+      "Slave spawn egg": "Slave Spawn Egg",
+      "item.slave_mod.nigraniumingot": "Nigranium ingot",
+      "advancements.nigranium_carrot_advancement.descr": "Why would you do that?",
+      "subtitles.jozefliving": "",
+      "item.slave_mod.nigranium_axe": "Nigranium Axe",
+      "item.slave_mod.kk_karmor_leggings": "KKK Pants",
+      "item.slave_mod.encaged_otrok_2_spawn_egg": "Encaged Otrok 2 Spawn Egg",
+      "item.slave_mod.empty_amulet": "Empty Nigranium Amulet",
+      "subtitles.jozef3": "",
+      "subtitles.jozef4": "",
+      "item.slave_mod.slave_boss_spawn_egg": "Noples Ruler Spawn Egg",
+      "item.slave_mod.chainpiece": "Chain piece",
+      "item.minecraft.lingering_potion.effect.ebola": "Lingering Ebola"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Cotton",
+        "children": [
+          {
+            "name": "Procedures_Cotton",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "ARMOR",
+        "children": [
+          {
+            "name": "KKK_armor",
+            "children": []
+          },
+          {
+            "name": "Nigranium_armor",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Creatures",
+        "children": [
+          {
+            "name": "Enslaver",
+            "children": []
+          },
+          {
+            "name": "Otrok",
+            "children": []
+          },
+          {
+            "name": "Nigranium_golem",
+            "children": []
+          },
+          {
+            "name": "RangedSlave",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tools",
+        "children": [
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Totem",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "Amulet",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Welsfargo",
+        "children": []
+      },
+      {
+        "name": "Random_stuff",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "slave_mod",
+    "modName": "Slave mod od Marka",
+    "version": "1.0.0",
+    "author": "VD, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.slave_mod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

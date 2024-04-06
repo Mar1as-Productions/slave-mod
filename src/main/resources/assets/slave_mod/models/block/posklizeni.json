@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slave_mod:blocks/posklizeni",
+    "particle": "slave_mod:blocks/posklizeni"
+  }
+}

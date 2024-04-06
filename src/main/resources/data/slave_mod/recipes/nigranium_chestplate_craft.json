@@ -1,0 +1,42 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "1": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "2": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "3": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "4": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "5": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "6": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "7": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "8": {
+      "item": "slave_mod:nigraniumingot"
+    }
+  },
+  "result": {
+    "item": "slave_mod:nigranium_armor_chestplate",
+    "count": 1
+  }
+}

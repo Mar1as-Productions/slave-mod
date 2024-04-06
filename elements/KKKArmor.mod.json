@@ -1,0 +1,70 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "kkk_head",
+    "enableBody": true,
+    "textureBody": "kkk_body",
+    "enableLeggings": true,
+    "textureLeggings": "kkk_leggings",
+    "enableBoots": true,
+    "textureBoots": "kkk_boots",
+    "onHelmetTick": {
+      "name": "Strach"
+    },
+    "onBodyTick": {
+      "name": "Strach"
+    },
+    "onLeggingsTick": {
+      "name": "Strach"
+    },
+    "onBootsTick": {
+      "name": "Strach"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "armorTextureFile": "armorpokus2layer_1",
+    "helmetName": "KKK Hood",
+    "bodyName": "KKK Robe",
+    "leggingsName": "KKK Pants",
+    "bootsName": "KKK Shoes",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelarmor_main2",
+    "helmetModelPart": "Hood",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelarmor_main2",
+    "bodyModelPart": "Robe",
+    "armsModelPartL": "LeftSleeve",
+    "armsModelPartR": "RightSleeve",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Modelarmor_leggings",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modelarmor_main2",
+    "bootsModelPartL": "LeftShoe",
+    "bootsModelPartR": "RightShoe",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

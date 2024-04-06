@@ -1,0 +1,13 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slave_mod:harvested_cotton"
+    }
+  ],
+  "result": {
+    "item": "slave_mod:cottonseeds",
+    "count": 1
+  }
+}

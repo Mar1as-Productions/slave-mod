@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slave_mod:blocks/kkkwood",
+    "up": "slave_mod:blocks/kkkwood",
+    "north": "slave_mod:blocks/kkkwood",
+    "east": "slave_mod:blocks/kkkwood",
+    "south": "slave_mod:blocks/kkkwood",
+    "west": "slave_mod:blocks/kkkwood",
+    "particle": "slave_mod:blocks/kkkwood"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "1": {
+      "item": "slave_mod:chainpiece"
+    },
+    "2": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "3": {
+      "item": "slave_mod:chainpiece"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "slave_mod:chainpiece"
+    },
+    "6": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "7": {
+      "item": "slave_mod:chainpiece"
+    },
+    "8": {
+      "item": "slave_mod:nigraniumingot"
+    }
+  },
+  "result": {
+    "item": "slave_mod:enslaved_glowstone",
+    "count": 1
+  }
+}

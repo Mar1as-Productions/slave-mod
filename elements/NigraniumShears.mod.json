@@ -1,0 +1,37 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "nigraniumshears",
+    "customModelName": "Normal",
+    "name": "Nigranium Shears",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "toolType": "Shears",
+    "harvestLevel": 1,
+    "efficiency": 1.5,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 2.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:NigraniumShears"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "NigraniumShearsBlockDestroyedWithTool"
+    }
+  }
+}

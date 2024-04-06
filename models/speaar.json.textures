@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "drevo",
+        "1": "ostri"
+      },
+      "name": "default"
+    }
+  }
+}

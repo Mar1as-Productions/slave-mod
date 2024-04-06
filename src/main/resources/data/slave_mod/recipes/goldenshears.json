@@ -1,0 +1,20 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "2 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:gold_ingot"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "slave_mod:goldenshears",
+    "count": 1
+  }
+}

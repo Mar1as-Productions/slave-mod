@@ -1,0 +1,9 @@
+{
+  "parent": "slave_mod:custom/bic2",
+  "textures": {
+    "0": "slave_mod:blocks/drzak",
+    "1": "slave_mod:blocks/bic",
+    "2": "slave_mod:blocks/konec",
+    "particle": "slave_mod:items/whip"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "slave_mod:nigraniumcarrot"
+    },
+    "title": {
+      "translate": "advancements.nigranium_carrot_eat.title"
+    },
+    "description": {
+      "translate": "advancements.nigranium_carrot_eat.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nigranium_carrot_eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "slave_mod:nigraniumcarrot"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 4
+  },
+  "parent": "slave_mod:africaenter"
+}

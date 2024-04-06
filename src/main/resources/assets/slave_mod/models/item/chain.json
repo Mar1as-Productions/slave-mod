@@ -1,0 +1,8 @@
+{
+  "parent": "slave_mod:custom/chain2",
+  "textures": {
+    "0": "slave_mod:blocks/retez2",
+    "1": "slave_mod:blocks/retezdrzak2",
+    "particle": "slave_mod:items/chain"
+  }
+}

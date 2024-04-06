@@ -1,0 +1,36 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "whip",
+    "customModelName": "bic2:default",
+    "name": "Whip",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 2.0,
+    "attackSpeed": 2.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 256,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "WhipToolRightClick"
+    },
+    "onRightClickedOnBlock": {
+      "name": "WhipToolRightClick"
+    },
+    "onEntityHitWith": {
+      "name": "WhipToolRightClick"
+    }
+  }
+}

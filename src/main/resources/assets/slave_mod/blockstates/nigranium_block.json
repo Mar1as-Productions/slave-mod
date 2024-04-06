@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "slave_mod:block/nigranium_block"
+    }
+  }
+}

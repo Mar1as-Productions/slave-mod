@@ -1,0 +1,16 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slave_mod:bavlna"
+    },
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "result": {
+    "item": "slave_mod:whipending",
+    "count": 1
+  }
+}

@@ -1,0 +1,62 @@
+newmtl m_0
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_1
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_3
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_4
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_5
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_7
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_8
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl m_10
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+map_Kd slave_mod:blocks/
+Ns 100.0
+d 1.0
+newmtl none
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0

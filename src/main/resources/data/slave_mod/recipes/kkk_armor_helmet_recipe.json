@@ -1,0 +1,33 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "slave_mod:cotton"
+    },
+    "3": {
+      "item": "slave_mod:cotton"
+    },
+    "5": {
+      "item": "slave_mod:cotton"
+    },
+    "6": {
+      "item": "slave_mod:cotton"
+    },
+    "7": {
+      "item": "slave_mod:cotton"
+    },
+    "8": {
+      "item": "slave_mod:cotton"
+    }
+  },
+  "result": {
+    "item": "slave_mod:kkk_armor_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Bavlna"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bavlna"
+      },
+      {
+        "value": "CUSTOM:Bavlna"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:Bavlna"
+      },
+      {
+        "value": "CUSTOM:Bavlna"
+      },
+      {
+        "value": "CUSTOM:Bavlna"
+      },
+      {
+        "value": "CUSTOM:Bavlna"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:KKKarmor.body"
+    },
+    "name": "robe_recipe",
+    "namespace": "mod"
+  }
+}

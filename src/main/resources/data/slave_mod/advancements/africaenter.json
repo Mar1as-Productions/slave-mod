@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:grass_path"
+    },
+    "title": {
+      "translate": "advancements.africaenter.title"
+    },
+    "description": {
+      "translate": "advancements.africaenter.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "africaenter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "slave_mod:africa"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 420
+  }
+}

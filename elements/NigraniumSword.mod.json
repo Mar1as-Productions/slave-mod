@@ -1,0 +1,34 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "nigraniumsword",
+    "customModelName": "Normal",
+    "name": "Nigranium Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 6.5,
+    "attackSpeed": 2.0,
+    "enchantability": 30,
+    "damageVsEntity": 6.5,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      },
+      {
+        "value": "CUSTOM:NigraniumSword"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

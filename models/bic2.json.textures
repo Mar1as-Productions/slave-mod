@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "drzak",
+        "1": "bic",
+        "2": "konec"
+      },
+      "name": "default"
+    }
+  }
+}

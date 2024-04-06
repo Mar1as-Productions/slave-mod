@@ -1,0 +1,9 @@
+{
+  "parent": "slave_mod:custom/enslaved_glowstone5",
+  "textures": {
+    "all": "slave_mod:blocks/enslavedglowstone",
+    "particle": "slave_mod:blocks/enslavedglowstone",
+    "0": "slave_mod:blocks/glowstone",
+    "1": "slave_mod:blocks/mriz"
+  }
+}

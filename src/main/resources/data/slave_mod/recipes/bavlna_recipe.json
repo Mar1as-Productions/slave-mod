@@ -1,0 +1,42 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "1": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "2": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "3": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "4": {
+      "item": "slave_mod:nigranium_shears"
+    },
+    "5": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "6": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "7": {
+      "item": "slave_mod:harvested_cotton"
+    },
+    "8": {
+      "item": "slave_mod:harvested_cotton"
+    }
+  },
+  "result": {
+    "item": "slave_mod:bavlna",
+    "count": 1
+  }
+}

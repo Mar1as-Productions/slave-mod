@@ -1,0 +1,13 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slave_mod:bavlnaitem"
+    }
+  ],
+  "result": {
+    "item": "slave_mod:bavlnaseminka",
+    "count": 4
+  }
+}

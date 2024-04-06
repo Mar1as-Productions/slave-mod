@@ -1,0 +1,16 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slave_mod:bavlnaitem"
+    },
+    {
+      "item": "slave_mod:goldenshears"
+    }
+  ],
+  "result": {
+    "item": "slave_mod:cotton",
+    "count": 1
+  }
+}

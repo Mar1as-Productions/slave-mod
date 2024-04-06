@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "retez2",
+        "1": "retezdrzak2"
+      },
+      "name": "default"
+    }
+  }
+}

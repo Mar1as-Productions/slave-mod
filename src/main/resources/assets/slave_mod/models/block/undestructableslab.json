@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "slave_mod:blocks/anceptical_spruce_planks",
+    "top": "slave_mod:blocks/anceptical_spruce_planks",
+    "side": "slave_mod:blocks/anceptical_spruce_planks"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "nigraniumarmor_head",
+    "enableBody": true,
+    "textureBody": "nigraniumarmor_body",
+    "enableLeggings": true,
+    "textureLeggings": "nigraniumarmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "nigraniumarmor_boots",
+    "onHelmetTick": {
+      "name": "NigraniumArmorFireResistance"
+    },
+    "onBodyTick": {
+      "name": "NigraniumArmorFireResistance"
+    },
+    "onLeggingsTick": {
+      "name": "NigraniumArmorFireResistance"
+    },
+    "onBootsTick": {
+      "name": "NigraniumArmorFireResistance"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:SlaveMod"
+    },
+    "armorTextureFile": "nigraniumarmor",
+    "helmetName": "Nigranium Helmet",
+    "bodyName": "Nigranium Chestplate",
+    "leggingsName": "Nigranium Leggings",
+    "bootsName": "Nigranium Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 30,
+    "damageValueHelmet": 2,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 2,
+    "enchantability": 30,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Nigraniumingot"
+      }
+    ]
+  }
+}

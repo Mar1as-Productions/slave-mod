@@ -1,0 +1,11 @@
+{
+  "parent": "slave_mod:custom/wooden_wheel",
+  "textures": {
+    "all": "slave_mod:blocks/kolodrevo",
+    "particle": "slave_mod:blocks/kolodrevo",
+    "0": "slave_mod:blocks/kolodrevo",
+    "1": "slave_mod:blocks/texturepripevneni",
+    "2": "slave_mod:blocks/texture_ram",
+    "3": "slave_mod:blocks/texture_stred"
+  }
+}

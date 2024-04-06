@@ -1,0 +1,33 @@
+{
+  "group": "slave_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "slave_mod:nigraniumnugget"
+    },
+    "2": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "3": {
+      "item": "slave_mod:nigraniumnugget"
+    },
+    "5": {
+      "item": "slave_mod:nigraniumnugget"
+    },
+    "6": {
+      "item": "slave_mod:nigraniumingot"
+    },
+    "7": {
+      "item": "slave_mod:nigraniumnugget"
+    }
+  },
+  "result": {
+    "item": "slave_mod:chainpiece",
+    "count": 1
+  }
+}

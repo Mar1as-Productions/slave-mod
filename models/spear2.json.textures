@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "tyc",
+        "2": "mezi",
+        "3": "ostri2"
+      },
+      "name": "default"
+    }
+  }
+}

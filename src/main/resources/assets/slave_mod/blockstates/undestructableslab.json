@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slave_mod:block/undestructableslab"
+    },
+    "type=top": {
+      "model": "slave_mod:block/undestructableslab_top"
+    },
+    "type=double": {
+      "model": "slave_mod:block/undestructableslab_full"
+    }
+  }
+}
