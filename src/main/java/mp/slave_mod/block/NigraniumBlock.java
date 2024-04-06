@@ -115,8 +115,12 @@ public class NigraniumBlock extends SlaveModModElements.ModElement {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE)
 					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.ANDESITE)
+					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.GRANITE)
+					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 5)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(7, 0, 0, 30))));
+			}), block.getDefaultState(), 6)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 10, 10, 45))));
 		}
 	}
 }

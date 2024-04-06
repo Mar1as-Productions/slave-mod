@@ -50,7 +50,7 @@ public class NigraniumBlockDestroyedProcedure extends SlaveModModElements.ModEle
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((Math.random() <= 0.08)) {
+		if ((Math.random() <= 0.1)) {
 			if (world instanceof World && !world.getWorld().isRemote) {
 				Entity entityToSpawn = new JozefEntity.CustomEntity(JozefEntity.entity, world.getWorld());
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
@@ -68,7 +68,7 @@ public class NigraniumBlockDestroyedProcedure extends SlaveModModElements.ModEle
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("slave_mod:jozefh")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
-		} else if (((Math.random() >= 0.1) && (Math.random() <= 0.13))) {
+		} else if (((Math.random() > 0.1) && (Math.random() <= 0.25))) {
 			for (int index0 = 0; index0 < (int) (2); index0++) {
 				if (world instanceof World && !world.getWorld().isRemote) {
 					Entity entityToSpawn = new JozefEntity.CustomEntity(JozefEntity.entity, world.getWorld());

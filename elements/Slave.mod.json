@@ -117,10 +117,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 20,
+    "spawningProbability": 25,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 5,
-    "maxNumberOfMobsPerGroup": 8,
+    "minNumberOfMobsPerGroup": 6,
+    "maxNumberOfMobsPerGroup": 10,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Africa"
