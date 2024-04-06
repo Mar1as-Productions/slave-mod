@@ -33,16 +33,16 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": "CUSTOM:KKKarmor.helmet"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "CUSTOM:KKKarmor.body"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "CUSTOM:KKKarmor.legs"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "CUSTOM:KKKarmor.boots"
+      "value": ""
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "ILLAGER",
@@ -60,7 +60,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": false,
+    "ridable": true,
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
