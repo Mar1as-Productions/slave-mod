@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:Africaenter"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"51\" y=\"17\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Nigraniumcarrot</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"51\" y=\"17\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Cottonstage3</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }
