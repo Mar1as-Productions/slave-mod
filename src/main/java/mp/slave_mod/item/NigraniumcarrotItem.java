@@ -13,6 +13,7 @@ import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
@@ -62,7 +63,8 @@ public class NigraniumcarrotItem extends SlaveModModElements.ModElement {
 
 		@Override
 		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
-			ItemStack retval = super.onItemUseFinish(itemstack, world, entity);
+			ItemStack retval = new ItemStack(CarrotLeftoverItem.block);
+			super.onItemUseFinish(itemstack, world, entity);
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
@@ -72,7 +74,16 @@ public class NigraniumcarrotItem extends SlaveModModElements.ModElement {
 				$_dependencies.put("world", world);
 				NigraniumCarrotEatenProcedure.executeProcedure($_dependencies);
 			}
-			return retval;
+			if (itemstack.isEmpty()) {
+				return retval;
+			} else {
+				if (entity instanceof PlayerEntity) {
+					PlayerEntity player = (PlayerEntity) entity;
+					if (!player.isCreative() && !player.inventory.addItemStackToInventory(retval))
+						player.dropItem(retval, false);
+				}
+				return itemstack;
+			}
 		}
 	}
 }

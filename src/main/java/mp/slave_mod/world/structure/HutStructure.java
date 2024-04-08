@@ -29,12 +29,9 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import mp.slave_mod.procedures.HutTAdditionalGenerationConditionProcedure;
 import mp.slave_mod.SlaveModModElements;
 
 import java.util.Random;
-
-import com.google.common.collect.ImmutableMap;
 
 @SlaveModModElements.ModElement.Tag
 public class HutStructure extends SlaveModModElements.ModElement {
@@ -49,7 +46,7 @@ public class HutStructure extends SlaveModModElements.ModElement {
 				dimensionCriteria = true;
 			if (!dimensionCriteria)
 				return false;
-			if ((random.nextInt(1000000) + 1) <= 2000) {
+			if ((random.nextInt(1000000) + 1) <= 3000) {
 				int count = random.nextInt(1) + 1;
 				for (int a = 0; a < count; a++) {
 					int i = ci + random.nextInt(16);
@@ -68,14 +65,12 @@ public class HutStructure extends SlaveModModElements.ModElement {
 					int x = spawnTo.getX();
 					int y = spawnTo.getY();
 					int z = spawnTo.getZ();
-					if (!HutTAdditionalGenerationConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-						continue;
 					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 							.getTemplateDefaulted(new ResourceLocation("slave_mod", "hutloot1"));
 					if (template == null)
 						return false;
 					template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
-							.addProcessor(BlockIgnoreStructureProcessor.AIR).setChunk(null).setIgnoreEntities(false));
+							.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
 				}
 			}
 			return true;

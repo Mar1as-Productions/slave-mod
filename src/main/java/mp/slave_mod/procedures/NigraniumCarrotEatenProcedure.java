@@ -124,6 +124,31 @@ public class NigraniumCarrotEatenProcedure extends SlaveModModElements.ModElemen
 								((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.RESISTANCE, (int) 300, (int) 1));
 							if (entity instanceof LivingEntity)
 								((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.GLOWING, (int) 300, (int) 1));
+							new Object() {
+								private int ticks = 0;
+								private float waitTicks;
+								private IWorld world;
+								public void start(IWorld world, int waitTicks) {
+									this.waitTicks = waitTicks;
+									MinecraftForge.EVENT_BUS.register(this);
+									this.world = world;
+								}
+
+								@SubscribeEvent
+								public void tick(TickEvent.ServerTickEvent event) {
+									if (event.phase == TickEvent.Phase.END) {
+										this.ticks += 1;
+										if (this.ticks >= this.waitTicks)
+											run();
+									}
+								}
+
+								private void run() {
+									if (entity instanceof LivingEntity)
+										((LivingEntity) entity).clearActivePotions();
+									MinecraftForge.EVENT_BUS.unregister(this);
+								}
+							}.start(world, (int) 300);
 						}
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}

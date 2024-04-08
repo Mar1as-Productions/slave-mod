@@ -21,181 +21,175 @@ public class HutTAdditionalGenerationConditionProcedure extends SlaveModModEleme
 		super(instance, 32);
 	}
 
-	public static boolean executeProcedure(Map<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				SlaveModMod.LOGGER.warn("Failed to load dependency x for procedure HutTAdditionalGenerationCondition!");
-			return false;
+			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
 				SlaveModMod.LOGGER.warn("Failed to load dependency y for procedure HutTAdditionalGenerationCondition!");
-			return false;
+			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
 				SlaveModMod.LOGGER.warn("Failed to load dependency z for procedure HutTAdditionalGenerationCondition!");
-			return false;
+			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				SlaveModMod.LOGGER.warn("Failed to load dependency world for procedure HutTAdditionalGenerationCondition!");
-			return false;
+			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) (Double.NaN); index0++) {
-			if (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK) && (((world.getBlockState(
-					new BlockPos((int) (x + 5), (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK)
-					&& (((world.getBlockState(new BlockPos((int) (x + 10), (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK) && (((world
-							.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 5)))).getBlock() == Blocks.GRASS_BLOCK)
-							&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 10)))).getBlock() == Blocks.GRASS_BLOCK) && (((world
-									.getBlockState(new BlockPos((int) (x + 5), (int) y, (int) (z + 5)))).getBlock() == Blocks.GRASS_BLOCK)
-									&& (((world.getBlockState(new BlockPos((int) (x + 10), (int) y, (int) (z + 5)))).getBlock() == Blocks.GRASS_BLOCK)
-											&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) y, (int) (z + 10))))
-													.getBlock() == Blocks.GRASS_BLOCK)
-													&& (((world.getBlockState(new BlockPos((int) (x + 10), (int) y, (int) (z + 10))))
-															.getBlock() == Blocks.GRASS_BLOCK)
-															&& (((world.getBlockState(new BlockPos((int) (x + 3), (int) y, (int) (z + 3))))
-																	.getBlock() == Blocks.GRASS_BLOCK)
-																	&& (((world.getBlockState(new BlockPos((int) (x + 3), (int) y, (int) (z + 8))))
-																			.getBlock() == Blocks.GRASS_BLOCK)
-																			&& (((world.getBlockState(
-																					new BlockPos((int) (x + 8), (int) y, (int) (z + 3))))
-																							.getBlock() == Blocks.GRASS_BLOCK)
-																					&& ((world.getBlockState(
-																							new BlockPos((int) (x + 8), (int) y, (int) (z + 8))))
-																									.getBlock() == Blocks.GRASS_BLOCK)))))))))))))
-					&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR) && (((world.getBlockState(
-							new BlockPos((int) x, (int) (y + 7), (int) z))).getBlock() == Blocks.AIR)
-							&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 13), (int) z))).getBlock() == Blocks.AIR) && (((world
-									.getBlockState(new BlockPos((int) (x + 5), (int) (y + 1), (int) (z + 5)))).getBlock() == Blocks.AIR)
-									&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 7), (int) (z + 5)))).getBlock() == Blocks.AIR)
-											&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 13), (int) (z + 5))))
-													.getBlock() == Blocks.AIR)
-													&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 1), (int) z)))
-															.getBlock() == Blocks.AIR)
-															&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 7), (int) z)))
-																	.getBlock() == Blocks.AIR)
-																	&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 13), (int) z)))
-																			.getBlock() == Blocks.AIR)
-																			&& (((world.getBlockState(
-																					new BlockPos((int) (x + 10), (int) (y + 1), (int) z)))
-																							.getBlock() == Blocks.AIR)
-																					&& (((world.getBlockState(
-																							new BlockPos((int) (x + 10), (int) (y + 7), (int) z)))
-																									.getBlock() == Blocks.AIR)
-																							&& (((world.getBlockState(new BlockPos((int) (x + 10),
-																									(int) (y + 13), (int) z)))
-																											.getBlock() == Blocks.AIR)
-																									&& (((world.getBlockState(new BlockPos((int) x,
-																											(int) (y + 1), (int) (z + 5))))
-																													.getBlock() == Blocks.AIR)
-																											&& (((world.getBlockState(new BlockPos(
-																													(int) x, (int) (y + 7),
-																													(int) (z + 5))))
-																															.getBlock() == Blocks.AIR)
-																													&& (((world.getBlockState(
-																															new BlockPos((int) x,
-																																	(int) (y + 13),
-																																	(int) (z + 5))))
-																																			.getBlock() == Blocks.AIR)
-																															&& (((world.getBlockState(
-																																	new BlockPos(
-																																			(int) x,
-																																			(int) (y + 1),
-																																			(int) (z + 10))))
-																																					.getBlock() == Blocks.AIR)
-																																	&& (((world
-																																			.getBlockState(
-																																					new BlockPos(
-																																							(int) x,
-																																							(int) (y + 7),
-																																							(int) (z + 10))))
-																																									.getBlock() == Blocks.AIR)
-																																			&& (((world
-																																					.getBlockState(
-																																							new BlockPos(
-																																									(int) x,
-																																									(int) (y + 13),
-																																									(int) (z + 10))))
-																																											.getBlock() == Blocks.AIR)
-																																					&& (((world
-																																							.getBlockState(
-																																									new BlockPos(
-																																											(int) (x + 5),
-																																											(int) (y + 1),
-																																											(int) (z + 10))))
-																																													.getBlock() == Blocks.AIR)
-																																							&& (((world
-																																									.getBlockState(
-																																											new BlockPos(
-																																													(int) (x + 5),
-																																													(int) (y + 7),
-																																													(int) (z + 10))))
-																																															.getBlock() == Blocks.AIR)
-																																									&& (((world
-																																											.getBlockState(
-																																													new BlockPos(
-																																															(int) (x + 5),
-																																															(int) (y + 13),
-																																															(int) (z + 10))))
-																																																	.getBlock() == Blocks.AIR)
-																																											&& (((world
-																																													.getBlockState(
-																																															new BlockPos(
-																																																	(int) (x + 10),
-																																																	(int) (y + 1),
-																																																	(int) (z + 10))))
-																																																			.getBlock() == Blocks.AIR)
-																																													&& (((world
-																																															.getBlockState(
-																																																	new BlockPos(
-																																																			(int) (x + 10),
-																																																			(int) (y + 7),
-																																																			(int) (z + 10))))
-																																																					.getBlock() == Blocks.AIR)
-																																															&& (((world
-																																																	.getBlockState(
-																																																			new BlockPos(
-																																																					(int) (x + 10),
-																																																					(int) (y + 13),
-																																																					(int) (z + 10))))
-																																																							.getBlock() == Blocks.AIR)
-																																																	&& (((world
-																																																			.getBlockState(
-																																																					new BlockPos(
-																																																							(int) (x + 10),
-																																																							(int) (y + 1),
-																																																							(int) (z + 5))))
-																																																									.getBlock() == Blocks.AIR)
-																																																			&& (((world
-																																																					.getBlockState(
-																																																							new BlockPos(
-																																																									(int) (x + 10),
-																																																									(int) (y + 7),
-																																																									(int) (z + 5))))
-																																																											.getBlock() == Blocks.AIR)
-																																																					&& ((world
-																																																							.getBlockState(
-																																																									new BlockPos(
-																																																											(int) (x + 10),
-																																																											(int) (y + 13),
-																																																											(int) (z + 5))))
-																																																													.getBlock() == Blocks.AIR))))))))))))))))))))))))))))) {
-				if (!world.getWorld().isRemote) {
-					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("slave_mod", "hutloot1"));
-					if (template != null) {
-						template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z),
-								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
-					}
+		if (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK) && (((world.getBlockState(
+				new BlockPos((int) (x + 5), (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK)
+				&& (((world.getBlockState(new BlockPos((int) (x + 10), (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK) && (((world
+						.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 5)))).getBlock() == Blocks.GRASS_BLOCK)
+						&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 10)))).getBlock() == Blocks.GRASS_BLOCK) && (((world
+								.getBlockState(new BlockPos((int) (x + 5), (int) y, (int) (z + 5)))).getBlock() == Blocks.GRASS_BLOCK)
+								&& (((world.getBlockState(new BlockPos((int) (x + 10), (int) y, (int) (z + 5)))).getBlock() == Blocks.GRASS_BLOCK)
+										&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) y, (int) (z + 10))))
+												.getBlock() == Blocks.GRASS_BLOCK)
+												&& (((world.getBlockState(new BlockPos((int) (x + 10), (int) y, (int) (z + 10))))
+														.getBlock() == Blocks.GRASS_BLOCK)
+														&& (((world.getBlockState(new BlockPos((int) (x + 3), (int) y, (int) (z + 3))))
+																.getBlock() == Blocks.GRASS_BLOCK)
+																&& (((world.getBlockState(new BlockPos((int) (x + 3), (int) y, (int) (z + 8))))
+																		.getBlock() == Blocks.GRASS_BLOCK)
+																		&& (((world
+																				.getBlockState(new BlockPos((int) (x + 8), (int) y, (int) (z + 3))))
+																						.getBlock() == Blocks.GRASS_BLOCK)
+																				&& ((world.getBlockState(
+																						new BlockPos((int) (x + 8), (int) y, (int) (z + 8))))
+																								.getBlock() == Blocks.GRASS_BLOCK)))))))))))))
+				&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR) && (((world.getBlockState(
+						new BlockPos((int) x, (int) (y + 7), (int) z))).getBlock() == Blocks.AIR)
+						&& (((world.getBlockState(new BlockPos((int) x, (int) (y + 13), (int) z))).getBlock() == Blocks.AIR) && (((world
+								.getBlockState(new BlockPos((int) (x + 5), (int) (y + 1), (int) (z + 5)))).getBlock() == Blocks.AIR)
+								&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 7), (int) (z + 5)))).getBlock() == Blocks.AIR)
+										&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 13), (int) (z + 5))))
+												.getBlock() == Blocks.AIR)
+												&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 1), (int) z)))
+														.getBlock() == Blocks.AIR)
+														&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 7), (int) z)))
+																.getBlock() == Blocks.AIR)
+																&& (((world.getBlockState(new BlockPos((int) (x + 5), (int) (y + 13), (int) z)))
+																		.getBlock() == Blocks.AIR)
+																		&& (((world.getBlockState(
+																				new BlockPos((int) (x + 10), (int) (y + 1), (int) z)))
+																						.getBlock() == Blocks.AIR)
+																				&& (((world.getBlockState(
+																						new BlockPos((int) (x + 10), (int) (y + 7), (int) z)))
+																								.getBlock() == Blocks.AIR)
+																						&& (((world.getBlockState(new BlockPos((int) (x + 10),
+																								(int) (y + 13), (int) z))).getBlock() == Blocks.AIR)
+																								&& (((world.getBlockState(new BlockPos((int) x,
+																										(int) (y + 1), (int) (z + 5))))
+																												.getBlock() == Blocks.AIR)
+																										&& (((world.getBlockState(new BlockPos(
+																												(int) x, (int) (y + 7),
+																												(int) (z + 5))))
+																														.getBlock() == Blocks.AIR)
+																												&& (((world.getBlockState(
+																														new BlockPos((int) x,
+																																(int) (y + 13),
+																																(int) (z + 5))))
+																																		.getBlock() == Blocks.AIR)
+																														&& (((world.getBlockState(
+																																new BlockPos((int) x,
+																																		(int) (y + 1),
+																																		(int) (z + 10))))
+																																				.getBlock() == Blocks.AIR)
+																																&& (((world
+																																		.getBlockState(
+																																				new BlockPos(
+																																						(int) x,
+																																						(int) (y + 7),
+																																						(int) (z + 10))))
+																																								.getBlock() == Blocks.AIR)
+																																		&& (((world
+																																				.getBlockState(
+																																						new BlockPos(
+																																								(int) x,
+																																								(int) (y + 13),
+																																								(int) (z + 10))))
+																																										.getBlock() == Blocks.AIR)
+																																				&& (((world
+																																						.getBlockState(
+																																								new BlockPos(
+																																										(int) (x + 5),
+																																										(int) (y + 1),
+																																										(int) (z + 10))))
+																																												.getBlock() == Blocks.AIR)
+																																						&& (((world
+																																								.getBlockState(
+																																										new BlockPos(
+																																												(int) (x + 5),
+																																												(int) (y + 7),
+																																												(int) (z + 10))))
+																																														.getBlock() == Blocks.AIR)
+																																								&& (((world
+																																										.getBlockState(
+																																												new BlockPos(
+																																														(int) (x + 5),
+																																														(int) (y + 13),
+																																														(int) (z + 10))))
+																																																.getBlock() == Blocks.AIR)
+																																										&& (((world
+																																												.getBlockState(
+																																														new BlockPos(
+																																																(int) (x + 10),
+																																																(int) (y + 1),
+																																																(int) (z + 10))))
+																																																		.getBlock() == Blocks.AIR)
+																																												&& (((world
+																																														.getBlockState(
+																																																new BlockPos(
+																																																		(int) (x + 10),
+																																																		(int) (y + 7),
+																																																		(int) (z + 10))))
+																																																				.getBlock() == Blocks.AIR)
+																																														&& (((world
+																																																.getBlockState(
+																																																		new BlockPos(
+																																																				(int) (x + 10),
+																																																				(int) (y + 13),
+																																																				(int) (z + 10))))
+																																																						.getBlock() == Blocks.AIR)
+																																																&& (((world
+																																																		.getBlockState(
+																																																				new BlockPos(
+																																																						(int) (x + 10),
+																																																						(int) (y + 1),
+																																																						(int) (z + 5))))
+																																																								.getBlock() == Blocks.AIR)
+																																																		&& (((world
+																																																				.getBlockState(
+																																																						new BlockPos(
+																																																								(int) (x + 10),
+																																																								(int) (y + 7),
+																																																								(int) (z + 5))))
+																																																										.getBlock() == Blocks.AIR)
+																																																				&& ((world
+																																																						.getBlockState(
+																																																								new BlockPos(
+																																																										(int) (x + 10),
+																																																										(int) (y + 13),
+																																																										(int) (z + 5))))
+																																																												.getBlock() == Blocks.AIR))))))))))))))))))))))))))))) {
+			if (!world.getWorld().isRemote) {
+				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+						.getTemplateDefaulted(new ResourceLocation("slave_mod", "hutloot1"));
+				if (template != null) {
+					template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z),
+							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
 				}
 			}
-			break;
 		}
-		return (true);
 	}
 }
