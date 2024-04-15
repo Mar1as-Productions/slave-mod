@@ -72,10 +72,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -108,22 +104,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -318,7 +298,6 @@
       "ids": {},
       "registry_name": "hut_t_additional_generation_condition",
       "metadata": {
-        "return_type": "logic",
         "dependencies": [
           {
             "name": "x",
@@ -2257,6 +2236,141 @@
         ]
       },
       "path": "~/Creatures/Otrok"
+    },
+    {
+      "name": "SpearBulletHitsAnything",
+      "type": "procedure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spear_bullet_hits_anything",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Procedures"
+    },
+    {
+      "name": "EbolaActiveTickCondition",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ebola_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Negromancer",
+      "type": "livingentity",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "negromancer",
+      "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "NegroMinion",
+      "type": "livingentity",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "negro_minion",
+      "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "SpawnNegroMinion",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_negro_minion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "NegromancerEntityIsHurt",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "negromancer_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Negromancer"
     }
   ],
   "variable_elements": [],
@@ -2353,8 +2467,8 @@
   "language_map": {
     "en_us": {
       "item.slave_mod.nigranium_hoe": "Nigranium Hoe",
-      "subtitles.retez": "",
       "advancements.africaenter.title": "Entered Africa",
+      "subtitles.retez": "",
       "item.minecraft.tipped_arrow.effect.ebola": "Arrow of Ebola",
       "advancements.nigranium_carrot_advancement.title": "Yummy!...maybe...",
       "item.slave_mod.nigraniumnugget": "Nigranium Nugget",
@@ -2364,6 +2478,109 @@
       "item.slave_mod.encaged_otrok_spawn_egg": "Encaged Otrok Spawn Egg",
       "item.slave_mod.enslaver_spawn_egg": "Enslaver Spawn Egg",
       "subtitles.nazdarfrumrde": "",
+      "item.slave_mod.spear": "Spear",
+      "item.minecraft.potion.effect.ebola": "Ebola",
+      "entity.slave_mod.slave_boss": "Noples Ruler",
+      "itemGroup.tabslave_mod": "Slave Mod",
+      "subtitles.jozefdead": "",
+      "item.slave_mod.kk_karmor_chestplate": "KKK Robe",
+      "item.slave_mod.ranged_slave_spawn_egg": "Ranged Noples Spawn Egg",
+      "item.slave_mod.chain": "Chain",
+      "entity.slave_mod.enslaver": "Enslaver",
+      "block.slave_mod.kk_kactivating_b_lock": "KKK Totem Activating Block",
+      "block.slave_mod.cottonstage_3": "Cotton stage 3",
+      "entity.slave_mod.slave_animal": "Wild Noples",
+      "block.slave_mod.cottonstage_4": "Cotton stage 4",
+      "block.slave_mod.cottonstage_1": "Cotton stage 1",
+      "block.slave_mod.cottonstage_2": "Cotton stage 2",
+      "block.slave_mod.cottonstage_7": "Cotton stage 7",
+      "block.slave_mod.wodencrossbaseblock": "KKK Totem Base Block",
+      "block.slave_mod.cottonstage_5": "Cotton stage 5",
+      "block.slave_mod.cottonstage_6": "Cotton stage 6",
+      "item.slave_mod.slave_animal_spawn_egg": "Wild Noples Spawn Egg",
+      "item.slave_mod.whip_tool": "Whip",
+      "entity.slave_mod.slave": "Noples",
+      "block.slave_mod.cottonstage_0": "Cotton stage 0",
+      "item.slave_mod.jozef_spawn_egg": "Yozef Spawn Egg",
+      "item.slave_mod.nigranium_pickaxe": "Nigranium Pickaxe",
+      "block.slave_mod.undestructableslab": "Undestructableslab",
+      "entity.slave_mod.jozef": "Yozef",
+      "subtitles.slavezvuk": "",
+      "entity.slave_mod.encaged_otrok_2": "Encaged Otrok 2",
+      "item.slave_mod.amulet": "Nigranium Amulet",
+      "item.slave_mod.carrot_leftover": "Carrot Leftover",
+      "Slave": "Slave",
+      "entity.slave_mod.negromancer": "Negromancer",
+      "item.slave_mod.nigranium_armor_leggings": "Nigranium Leggings",
+      "item.slave_mod.bavlna": "Cotton",
+      "block.slave_mod.undestructablespruceplank": "Undestructablespruceplank",
+      "item.slave_mod.cottonseeds": "Cotton seeds",
+      "item.slave_mod.nigranium_golem_spawn_egg": "Nigranium Golem Spawn Egg",
+      "entity.slave_mod.encaged_otrok": "Encaged Otrok",
+      "subtitles.jozefhurt": "",
+      "item.slave_mod.nigraniumcarrot": "Nigranium carrot",
+      "item.slave_mod.nigranium_shovel": "Nigranium Shovel",
+      "item.slave_mod.whip_ending_item": "Whip ending ",
+      "item.slave_mod.nigranium_armor_helmet": "Nigranium Helmet",
+      "item.slave_mod.kk_karmor_helmet": "KKK Hood",
+      "entity.slave_mod.otrok": "Enslaved Noples",
+      "block.slave_mod.nehorici_drevo_oak": "KKK Wood",
+      "item.slave_mod.nigranium_armor_chestplate": "Nigranium Chestplate",
+      "item.slave_mod.nigranium_shears": "Nigranium Shears",
+      "item.slave_mod.otrok_spawn_egg": "Enslaved Noples Spawn Egg",
+      "subtitles.jozefhhh": "",
+      "advancements.africaenter.descr": "You did it, you son of a bitch, you did it!",
+      "entity.slave_mod.nigranium_golem": "Nigranium Golem",
+      "block.slave_mod.nigranium": "Nigranium Ore",
+      "subtitles.slavehurt": "",
+      "subtitles.jozefh": "",
+      "entity.slave_mod.negro_minion": "Negro Minion",
+      "item.slave_mod.nigranium_armor_boots": "Nigranium Boots",
+      "block.slave_mod.ironbarfor_nopleses": "Unoptainable iron bar",
+      "item.slave_mod.negro_minion_spawn_egg": "Negro Minion Spawn Egg",
+      "item.slave_mod.kk_karmor_boots": "KKK Shoes",
+      "block.slave_mod.enslaved_glowstone": "Enslaved Glowstone",
+      "item.slave_mod.nigranium_sword": "Nigranium Sword",
+      "block.slave_mod.wheel": "Wheel",
+      "subtitles.krajina": "",
+      "effect.ebola": "Ebola",
+      "item.slave_mod.harvested_cotton": "Harvested Cotton",
+      "item.slave_mod.krajina": "V krajine zapomnienia",
+      "subtitles.slavedead": "",
+      "item.minecraft.splash_potion.effect.ebola": "Splash Ebola",
+      "item.slave_mod.krajina.desc": "The best music disc in Minecraft.",
+      "item.slave_mod.slave_spawn_egg": "Noples Spawn Egg",
+      "subtitles.jozef1": "",
+      "entity.slave_mod.ranged_slave": "Ranged Noples",
+      "subtitles.jozef2": "",
+      "Slave spawn egg": "Slave Spawn Egg",
+      "item.slave_mod.negromancer_spawn_egg": "Negromancer Spawn Egg",
+      "item.slave_mod.nigraniumingot": "Nigranium ingot",
+      "advancements.nigranium_carrot_advancement.descr": "Why would you do that?",
+      "subtitles.jozefliving": "",
+      "item.slave_mod.nigranium_axe": "Nigranium Axe",
+      "item.slave_mod.kk_karmor_leggings": "KKK Pants",
+      "item.slave_mod.encaged_otrok_2_spawn_egg": "Encaged Otrok 2 Spawn Egg",
+      "item.slave_mod.empty_amulet": "Empty Nigranium Amulet",
+      "subtitles.jozef3": "",
+      "subtitles.jozef4": "",
+      "item.slave_mod.slave_boss_spawn_egg": "Noples Ruler Spawn Egg",
+      "item.slave_mod.chainpiece": "Chain piece",
+      "item.minecraft.lingering_potion.effect.ebola": "Lingering Ebola"
+    },
+    "cs_cz": {
+      "item.slave_mod.nigranium_hoe": "Fejfarová",
+      "subtitles.retez": "Øetìzové zvuky lolol",
+      "advancements.africaenter.title": "Je z tebe negr",
+      "item.minecraft.tipped_arrow.effect.ebola": "Arrow of Ebola",
+      "advancements.nigranium_carrot_advancement.title": "Mòam mòam mòam je to fresh mam to rád",
+      "item.slave_mod.nigraniumnugget": "Chicken nuggetka",
+      "block.slave_mod.nigranium_block": "Negrblok",
+      "biome.slave_mod.africa": "Afrika",
+      "item.slave_mod.bavlnaitem": "Harvested cotton",
+      "item.slave_mod.encaged_otrok_spawn_egg": "Encaged Otrok Spawn Egg",
+      "item.slave_mod.enslaver_spawn_egg": "Enslaver Spawn Egg",
+      "subtitles.nazdarfrumrde": "Nazdar frumrde, co pro mì máš",
       "item.slave_mod.spear": "Spear",
       "item.minecraft.potion.effect.ebola": "Ebola",
       "entity.slave_mod.slave_boss": "Noples Ruler",
@@ -2396,6 +2613,7 @@
       "item.slave_mod.amulet": "Nigranium Amulet",
       "item.slave_mod.carrot_leftover": "Carrot Leftover",
       "Slave": "Slave",
+      "entity.slave_mod.negromancer": "Negromancer",
       "item.slave_mod.nigranium_armor_leggings": "Nigranium Leggings",
       "item.slave_mod.bavlna": "Cotton",
       "block.slave_mod.undestructablespruceplank": "Undestructablespruceplank",
@@ -2419,8 +2637,10 @@
       "block.slave_mod.nigranium": "Nigranium Ore",
       "subtitles.slavehurt": "",
       "subtitles.jozefh": "",
+      "entity.slave_mod.negro_minion": "Negro Minion",
       "item.slave_mod.nigranium_armor_boots": "Nigranium Boots",
       "block.slave_mod.ironbarfor_nopleses": "Unoptainable iron bar",
+      "item.slave_mod.negro_minion_spawn_egg": "Negro Minion Spawn Egg",
       "item.slave_mod.kk_karmor_boots": "KKK Shoes",
       "block.slave_mod.enslaved_glowstone": "Enslaved Glowstone",
       "item.slave_mod.nigranium_sword": "Nigranium Sword",
@@ -2437,6 +2657,7 @@
       "entity.slave_mod.ranged_slave": "Ranged Noples",
       "subtitles.jozef2": "",
       "Slave spawn egg": "Slave Spawn Egg",
+      "item.slave_mod.negromancer_spawn_egg": "Negromancer Spawn Egg",
       "item.slave_mod.nigraniumingot": "Nigranium ingot",
       "advancements.nigranium_carrot_advancement.descr": "Why would you do that?",
       "subtitles.jozefliving": "",
@@ -2493,6 +2714,10 @@
           },
           {
             "name": "RangedSlave",
+            "children": []
+          },
+          {
+            "name": "Negromancer",
             "children": []
           }
         ]
@@ -2560,20 +2785,22 @@
   },
   "workspaceSettings": {
     "modid": "slave_mod",
-    "modName": "Slave mod od Marka",
-    "version": "1.0.0",
-    "author": "VD, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "modName": "Slave Mod By Marias Productions XD",
+    "version": "0.1",
+    "description": "Very cool mod everyone should try at least once in their lives",
+    "author": "Mar1as Productions",
+    "websiteURL": "https://jirilabus.funsite.cz/",
+    "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "ebolensie",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.slave_mod",
+    "credits": "https://jirilabus.funsite.cz/",
+    "modElementsPackage": "mp.slave_mod",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202100236710

@@ -3,11 +3,15 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="slave_mod"
-version="1.0.0"
-displayName="Slave mod od Marka"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="VD, MCreator"
+version="0.1"
+displayName="Slave Mod By Marias Productions XD"
+credits="https://jirilabus.funsite.cz/"
+displayURL="https://jirilabus.funsite.cz/"
+logoFile="logo.png"
+authors="Mar1as Productions"
+description='''
+Very cool mod everyone should try at least once in their lives
+'''
 
 [[dependencies.slave_mod]]
     modId="minecraft"

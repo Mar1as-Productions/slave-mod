@@ -21,14 +21,14 @@
     },
     "hasGlow": false,
     "animation": "spear",
-    "enableMeleeDamage": false,
-    "damageVsEntity": 1.0,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.0,
     "onRangedItemUsed": {
       "name": "SpearRangedItemUsed"
     },
     "bulletPower": 1.2,
     "bulletDamage": 2.5,
-    "bulletKnockback": 0,
+    "bulletKnockback": 3,
     "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
@@ -37,13 +37,13 @@
     "bulletModel": "Modelspear2",
     "customBulletModelTexture": "spear.png",
     "onBulletHitsBlock": {
-      "name": "SpearBulletHitsBlock"
+      "name": "SpearBulletHitsAnything"
     },
     "onBulletHitsPlayer": {
-      "name": "SpearBulletHitsPlayer"
+      "name": "SpearBulletHitsAnything"
     },
     "onBulletHitsEntity": {
-      "name": "SpearBulletHitsLivingEntity"
+      "name": "SpearBulletHitsAnything"
     }
   }
 }
