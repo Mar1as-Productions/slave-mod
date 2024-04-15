@@ -1,4 +1,3 @@
-
 package mp.slave_mod.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,6 +18,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.world.BossInfo;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
@@ -27,6 +27,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -36,6 +41,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
+import net.minecraft.block.BlockState;
 
 import mp.slave_mod.procedures.NegromancerEntityIsHurtProcedure;
 import mp.slave_mod.itemgroup.SlaveModItemGroup;
@@ -120,6 +126,11 @@ public class NegromancerEntity extends SlaveModModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, EncagedOtrokEntity.CustomEntity.class, false, false));
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 		}
 
 		@Override
@@ -133,13 +144,24 @@ public class NegromancerEntity extends SlaveModModElements.ModElement {
 		}
 
 		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.destroy"));
+		}
+
+		@Override
+		public void playStepSound(BlockPos pos, BlockState blockIn) {
+			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.break")), 0.15f,
+					1);
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.hit"));
 		}
 
 		@Override
@@ -151,6 +173,7 @@ public class NegromancerEntity extends SlaveModModElements.ModElement {
 			Entity sourceentity = source.getTrueSource();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("sourceentity", sourceentity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -173,13 +196,16 @@ public class NegromancerEntity extends SlaveModModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+			if (this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK) == null)
+				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(0.6D);
 		}
 
 		@Override
 		public boolean isNonBoss() {
 			return false;
 		}
-		private final ServerBossInfo bossInfo = new ServerBossInfo(this.getDisplayName(), BossInfo.Color.WHITE, BossInfo.Overlay.PROGRESS);
+		private final ServerBossInfo bossInfo = new ServerBossInfo(this.getDisplayName(), BossInfo.Color.PURPLE, BossInfo.Overlay.NOTCHED_20);
 		@Override
 		public void addTrackingPlayer(ServerPlayerEntity player) {
 			super.addTrackingPlayer(player);

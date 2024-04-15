@@ -2286,7 +2286,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Negromancer",
@@ -2348,6 +2349,10 @@
       "registry_name": "negromancer_entity_is_hurt",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"

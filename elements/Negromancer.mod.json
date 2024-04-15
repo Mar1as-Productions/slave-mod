@@ -24,8 +24,8 @@
       "value": "CUSTOM:SlaveMod"
     },
     "isBoss": true,
-    "bossBarColor": "WHITE",
-    "bossBarType": "PROGRESS",
+    "bossBarColor": "PURPLE",
+    "bossBarType": "NOTCHED_20",
     "equipmentMainHand": {
       "value": ""
     },
@@ -80,16 +80,16 @@
       "value": "CUSTOM:Nigraniumcarrot"
     },
     "livingSound": {
-      "value": ""
+      "value": "block.anvil.destroy"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "block.ancient_debris.fall"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "block.anvil.hit"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.anvil.break"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -103,7 +103,7 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"434\" y=\"54\"></block><block type=\"attack_on_collide\" x=\"1078\" y=\"205\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block><block type=\"look_around\" x=\"474\" y=\"330\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"314\" y=\"38\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:EncagedOtrok</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block><block type=\"attack_on_collide\" x=\"1008\" y=\"178\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block><block type=\"look_around\" x=\"474\" y=\"330\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

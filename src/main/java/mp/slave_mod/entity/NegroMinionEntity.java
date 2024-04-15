@@ -1,4 +1,3 @@
-
 package mp.slave_mod.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -60,7 +59,7 @@ public class NegroMinionEntity extends SlaveModModElements.ModElement {
 			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.25f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("slave_mod:textures/vystrizek.png");
+					return new ResourceLocation("slave_mod:textures/negromancer.png");
 				}
 			};
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
