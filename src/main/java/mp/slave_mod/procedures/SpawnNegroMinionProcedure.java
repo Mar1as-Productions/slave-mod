@@ -1,9 +1,14 @@
+
 package mp.slave_mod.procedures;
+
+import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.SpawnReason;
@@ -69,8 +74,17 @@ public class SpawnNegroMinionProcedure extends SlaveModModElements.ModElement {
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) new_x, (int) new_y, (int) new_z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("slave_mod:whip")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				world.getWorld().playSound(new_x, new_y, new_z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("slave_mod:whip")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
 			if (world instanceof ServerWorld) {
-				((ServerWorld) world).spawnParticle(ParticleTypes.EXPLOSION, new_x, new_y, new_z, (int) 5, 3, 3, 3, 1);
+				((ServerWorld) world).spawnParticle(ParticleTypes.ENCHANTED_HIT, new_x, new_y, new_z, (int) 5, 3, 3, 3, 1);
 			}
 		}
 	}

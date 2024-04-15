@@ -2376,6 +2376,16 @@
         ]
       },
       "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "Welsfargo",
+      "type": "structure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "welsfargo",
+      "path": "~/Welsfargo"
     }
   ],
   "variable_elements": [],

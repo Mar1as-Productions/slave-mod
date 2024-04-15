@@ -1,4 +1,3 @@
-
 package mp.slave_mod.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
