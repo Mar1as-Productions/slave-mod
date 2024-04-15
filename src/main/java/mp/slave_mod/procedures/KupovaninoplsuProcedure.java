@@ -99,14 +99,14 @@ public class KupovaninoplsuProcedure extends SlaveModModElements.ModElement {
 			}
 		}.getAmount((int) (0))) >= 16) && ((((Entity) world
 				.getEntitiesWithinAABB(EncagedOtrokEntity.CustomEntity.class,
-						new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+						new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 				.stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null) || (((Entity) world
 						.getEntitiesWithinAABB(EncagedOtrok2Entity.CustomEntity.class,
-								new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 						.stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -116,7 +116,7 @@ public class KupovaninoplsuProcedure extends SlaveModModElements.ModElement {
 				{
 					List<Entity> _entfound = world
 							.getEntitiesWithinAABB(Entity.class,
-									new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+									new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 							.stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -124,7 +124,7 @@ public class KupovaninoplsuProcedure extends SlaveModModElements.ModElement {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if ((((Entity) world.getEntitiesWithinAABB(EncagedOtrokEntity.CustomEntity.class,
-								new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 								.stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -150,35 +150,29 @@ public class KupovaninoplsuProcedure extends SlaveModModElements.ModElement {
 									}
 								}.getAmount((int) (0))) > 16)) {
 									if (entity instanceof PlayerEntity) {
-										ItemStack _setstack = new ItemStack(Items.EMERALD);
-										_setstack.setCount((int) ((new Object() {
-											public int getAmount(int sltid) {
-												if (entity instanceof ServerPlayerEntity) {
-													Container _current = ((ServerPlayerEntity) entity).openContainer;
-													if (_current instanceof Supplier) {
-														Object invobj = ((Supplier) _current).get();
-														if (invobj instanceof Map) {
-															ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
-															if (stack != null)
-																return stack.getCount();
+										Container _current = ((PlayerEntity) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack _setstack = new ItemStack(Items.EMERALD);
+												_setstack.setCount((int) ((new Object() {
+													public int getAmount(int sltid) {
+														if (entity instanceof ServerPlayerEntity) {
+															Container _current = ((ServerPlayerEntity) entity).openContainer;
+															if (_current instanceof Supplier) {
+																Object invobj = ((Supplier) _current).get();
+																if (invobj instanceof Map) {
+																	ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+																	if (stack != null)
+																		return stack.getCount();
+																}
+															}
 														}
+														return 0;
 													}
-												}
-												return 0;
-											}
-										}.getAmount((int) (0))) - 16));
-										ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-									}
-									{
-										Entity _ent = entity;
-										if (_ent instanceof ServerPlayerEntity) {
-											Container _current = ((ServerPlayerEntity) _ent).openContainer;
-											if (_current instanceof Supplier) {
-												Object invobj = ((Supplier) _current).get();
-												if (invobj instanceof Map) {
-													((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (64));
-													_current.detectAndSendChanges();
-												}
+												}.getAmount((int) (0))) - 16));
+												((Slot) ((Map) invobj).get((int) (0))).putStack(_setstack);
+												_current.detectAndSendChanges();
 											}
 										}
 									}
@@ -232,8 +226,9 @@ public class KupovaninoplsuProcedure extends SlaveModModElements.ModElement {
 				}
 			} else if (((entity.getPersistentData().getBoolean("purchase")) == (true))) {
 				{
-					List<Entity> _entfound = world.getEntitiesWithinAABB(Entity.class,
-							new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)), null)
+					List<Entity> _entfound = world
+							.getEntitiesWithinAABB(Entity.class,
+									new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 							.stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -241,8 +236,8 @@ public class KupovaninoplsuProcedure extends SlaveModModElements.ModElement {
 							}.compareDistOf(x, y, z)).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if ((((Entity) world.getEntitiesWithinAABB(EncagedOtrok2Entity.CustomEntity.class,
-								new AxisAlignedBB(x - (100 / 2d), y - (100 / 2d), z - (100 / 2d), x + (100 / 2d), y + (100 / 2d), z + (100 / 2d)),
-								null).stream().sorted(new Object() {
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
+								.stream().sorted(new Object() {
 									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 									}

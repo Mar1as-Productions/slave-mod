@@ -62,14 +62,14 @@ public class EnslaverOnEntityTickUpdateProcedure extends SlaveModModElements.Mod
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((((Entity) world
 				.getEntitiesWithinAABB(EncagedOtrokEntity.CustomEntity.class,
-						new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+						new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 				.stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null) || (((Entity) world
 						.getEntitiesWithinAABB(EncagedOtrok2Entity.CustomEntity.class,
-								new AxisAlignedBB(x - (30 / 2d), y - (30 / 2d), z - (30 / 2d), x + (30 / 2d), y + (30 / 2d), z + (30 / 2d)), null)
+								new AxisAlignedBB(x - (10 / 2d), y - (10 / 2d), z - (10 / 2d), x + (10 / 2d), y + (10 / 2d), z + (10 / 2d)), null)
 						.stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
@@ -91,7 +91,7 @@ public class EnslaverOnEntityTickUpdateProcedure extends SlaveModModElements.Mod
 				{
 					MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 					if (mcserv != null)
-						mcserv.getPlayerList().sendMessage(new StringTextComponent("I am leaving now."));
+						mcserv.getPlayerList().sendMessage(new StringTextComponent((("I am leaving now.") + "" + (((x) + "" + (((y) + "" + (z))))))));
 				}
 				if (world instanceof World && !world.getWorld().isRemote) {
 					world.getWorld().createExplosion(null, (int) x, (int) y, (int) z, (float) 0, Explosion.Mode.NONE);
