@@ -2287,6 +2287,90 @@
           }
         ]
       }
+    },
+    {
+      "name": "Negromancer",
+      "type": "livingentity",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "negromancer",
+      "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "NegroMinion",
+      "type": "livingentity",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "negro_minion",
+      "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "SpawnNegroMinion",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_negro_minion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Negromancer"
+    },
+    {
+      "name": "NegromancerEntityIsHurt",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "negromancer_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creatures/Negromancer"
     }
   ],
   "variable_elements": [],
@@ -2426,6 +2510,7 @@
       "item.slave_mod.amulet": "Nigranium Amulet",
       "item.slave_mod.carrot_leftover": "Carrot Leftover",
       "Slave": "Slave",
+      "entity.slave_mod.negromancer": "Negromancer",
       "item.slave_mod.nigranium_armor_leggings": "Nigranium Leggings",
       "item.slave_mod.bavlna": "Cotton",
       "block.slave_mod.undestructablespruceplank": "Undestructablespruceplank",
@@ -2449,8 +2534,10 @@
       "block.slave_mod.nigranium": "Nigranium Ore",
       "subtitles.slavehurt": "",
       "subtitles.jozefh": "",
+      "entity.slave_mod.negro_minion": "Negro Minion",
       "item.slave_mod.nigranium_armor_boots": "Nigranium Boots",
       "block.slave_mod.ironbarfor_nopleses": "Unoptainable iron bar",
+      "item.slave_mod.negro_minion_spawn_egg": "Negro Minion Spawn Egg",
       "item.slave_mod.kk_karmor_boots": "KKK Shoes",
       "block.slave_mod.enslaved_glowstone": "Enslaved Glowstone",
       "item.slave_mod.nigranium_sword": "Nigranium Sword",
@@ -2467,6 +2554,7 @@
       "entity.slave_mod.ranged_slave": "Ranged Noples",
       "subtitles.jozef2": "",
       "Slave spawn egg": "Slave Spawn Egg",
+      "item.slave_mod.negromancer_spawn_egg": "Negromancer Spawn Egg",
       "item.slave_mod.nigraniumingot": "Nigranium ingot",
       "advancements.nigranium_carrot_advancement.descr": "Why would you do that?",
       "subtitles.jozefliving": "",
@@ -2525,6 +2613,7 @@
       "item.slave_mod.amulet": "Nigranium Amulet",
       "item.slave_mod.carrot_leftover": "Carrot Leftover",
       "Slave": "Slave",
+      "entity.slave_mod.negromancer": "Negromancer",
       "item.slave_mod.nigranium_armor_leggings": "Nigranium Leggings",
       "item.slave_mod.bavlna": "Cotton",
       "block.slave_mod.undestructablespruceplank": "Undestructablespruceplank",
@@ -2548,8 +2637,10 @@
       "block.slave_mod.nigranium": "Nigranium Ore",
       "subtitles.slavehurt": "",
       "subtitles.jozefh": "",
+      "entity.slave_mod.negro_minion": "Negro Minion",
       "item.slave_mod.nigranium_armor_boots": "Nigranium Boots",
       "block.slave_mod.ironbarfor_nopleses": "Unoptainable iron bar",
+      "item.slave_mod.negro_minion_spawn_egg": "Negro Minion Spawn Egg",
       "item.slave_mod.kk_karmor_boots": "KKK Shoes",
       "block.slave_mod.enslaved_glowstone": "Enslaved Glowstone",
       "item.slave_mod.nigranium_sword": "Nigranium Sword",
@@ -2566,6 +2657,7 @@
       "entity.slave_mod.ranged_slave": "Ranged Noples",
       "subtitles.jozef2": "",
       "Slave spawn egg": "Slave Spawn Egg",
+      "item.slave_mod.negromancer_spawn_egg": "Negromancer Spawn Egg",
       "item.slave_mod.nigraniumingot": "Nigranium ingot",
       "advancements.nigranium_carrot_advancement.descr": "Why would you do that?",
       "subtitles.jozefliving": "",
@@ -2622,6 +2714,10 @@
           },
           {
             "name": "RangedSlave",
+            "children": []
+          },
+          {
+            "name": "Negromancer",
             "children": []
           }
         ]
