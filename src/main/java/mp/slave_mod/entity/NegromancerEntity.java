@@ -173,6 +173,9 @@ public class NegromancerEntity extends SlaveModModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+			if (this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK) == null)
+				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(0.6D);
 		}
 
 		@Override
